@@ -9,6 +9,10 @@
 		margin-top: auto;
 		margin-bottom: auto;
 	}
+	h2:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
 }
 
 .width-40 {
@@ -24,4 +28,11 @@
 
 #navbar-logo {
 	width: 100px;
+
+	transition: 0.2s ease;
+}
+
+#navbar-logo:hover {
+	cursor: pointer;
+	transform: scale(1.1);
 }

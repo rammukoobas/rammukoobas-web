@@ -7,6 +7,10 @@ import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css'
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
+import Competitions from './Components/Competitions/Competitions';
+import Members from './Components/Members/Members';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +19,10 @@ root.render(
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/klubist" element={<About />} />
+        <Route path="/kontakt" element={<Contact />} />
+        <Route path="/liikmed" element={<Members />} />
+        <Route path="/voistlused" element={<Competitions />} />
         <Route path="*" element={<Homepage />} />
       </Routes>
     </BrowserRouter>

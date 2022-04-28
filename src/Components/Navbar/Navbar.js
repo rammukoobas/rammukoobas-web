@@ -17,17 +17,17 @@ function Navbar() {
 	return (
 		<header className='heading display-flex'>
 			<div className='width-40 display-flex'>
-				<h2 onClick={() => routeChange("/voistlused")}>VÕISTLUSED</h2>
+				<h2 onClick={() => routeChange("/klubist")}>KLUBIST</h2>
 				<h2 onClick={() => routeChange("/kontakt")}>KONTAKT</h2>
 			</div>
 
 			<div className='logo-container'>
-				<img id='navbar-logo' src={RammukoopaLogo} alt="Logo" />
+				<img id='navbar-logo' src={RammukoopaLogo} alt="Logo" onClick={() => routeChange("/")} />
 			</div>
 
 			<div className='width-40 display-flex'>
-				<h2 onClick={() => routeChange("/klubist")}>KLUBIST</h2>
 				<h2 onClick={() => routeChange("/liikmed")}>LIIKMED</h2>
+				<h2 onClick={() => routeChange("/voistlused")}>VÕISTLUSED</h2>
 			</div>
 		</header>
 	)
