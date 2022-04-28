@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/rammukoobas-web/static/css/main.a617e044.chunk.css",
-    "main.js": "/rammukoobas-web/static/js/main.03e911e4.chunk.js",
-    "main.js.map": "/rammukoobas-web/static/js/main.03e911e4.chunk.js.map",
+    "main.css": "/rammukoobas-web/static/css/main.ea1455b2.chunk.css",
+    "main.js": "/rammukoobas-web/static/js/main.95cade35.chunk.js",
+    "main.js.map": "/rammukoobas-web/static/js/main.95cade35.chunk.js.map",
     "runtime-main.js": "/rammukoobas-web/static/js/runtime-main.3d21a863.js",
     "runtime-main.js.map": "/rammukoobas-web/static/js/runtime-main.3d21a863.js.map",
-    "static/js/2.553c0cc1.chunk.js": "/rammukoobas-web/static/js/2.553c0cc1.chunk.js",
-    "static/js/2.553c0cc1.chunk.js.map": "/rammukoobas-web/static/js/2.553c0cc1.chunk.js.map",
+    "static/js/2.e43fe52b.chunk.js": "/rammukoobas-web/static/js/2.e43fe52b.chunk.js",
+    "static/js/2.e43fe52b.chunk.js.map": "/rammukoobas-web/static/js/2.e43fe52b.chunk.js.map",
     "static/js/3.beab3ce9.chunk.js": "/rammukoobas-web/static/js/3.beab3ce9.chunk.js",
     "static/js/3.beab3ce9.chunk.js.map": "/rammukoobas-web/static/js/3.beab3ce9.chunk.js.map",
     "index.html": "/rammukoobas-web/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/rammukoobas-web/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.553c0cc1.chunk.js.LICENSE.txt": "/rammukoobas-web/static/js/2.553c0cc1.chunk.js.LICENSE.txt",
+    "static/css/main.ea1455b2.chunk.css.map": "/rammukoobas-web/static/css/main.ea1455b2.chunk.css.map",
+    "static/js/2.e43fe52b.chunk.js.LICENSE.txt": "/rammukoobas-web/static/js/2.e43fe52b.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/rammukoobas-web/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3d21a863.js",
-    "static/js/2.553c0cc1.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.03e911e4.chunk.js"
+    "static/js/2.e43fe52b.chunk.js",
+    "static/css/main.ea1455b2.chunk.css",
+    "static/js/main.95cade35.chunk.js"
   ]
 }
