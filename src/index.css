@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1,h2,h3,h4,h5,p {
+  font-family: 'Chakra Petch', sans-serif!important;
+}
+
+.display-flex {
+  display: flex;
+}
+
+/* Semantic UI overwrites */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
+  margin-top: auto!important;
+}
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child {
+  margin-bottom: auto!important;
+}
