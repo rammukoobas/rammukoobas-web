@@ -33,7 +33,7 @@ function MobileSidebar({ sidebar, setSidebar }) {
 				<h2 onClick={() => { routeChange("/liikmed"); setSidebar(false) }}>LIIKMED</h2>
 			</Menu.Item>
 			<Menu.Item>
-				<span onClick={() => routeChange("/voistlused")}>VÕISTLUSED<span className='alert'> (!!)</span></span>
+				<span onClick={() => { routeChange("/voistlused"); setSidebar(false) }}>VÕISTLUSED<span className='alert'> (!!)</span></span>
 			</Menu.Item>
 			<div className='social-media'>
 				<a href='https://www.instagram.com/rammukoobas/' target="_blank" rel="noopener noreferrer">

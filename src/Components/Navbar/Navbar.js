@@ -26,7 +26,7 @@ function Navbar() {
 
 			<div className='logo-container'>
 				<a href={window.location.origin}>
-					<img id='navbar-logo' src={RammukoopaLogo} alt="Logo" onClick={() => routeChange("/")} />
+					<img id='navbar-logo' src={RammukoopaLogo} alt="Logo" />
 				</a>
 			</div>
 
