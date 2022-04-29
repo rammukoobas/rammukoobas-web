@@ -1,0 +1,38 @@
+.close-x {
+	position: relative;
+	margin-top: 20px;
+	height: 80px;
+
+	i.icon {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		right: 30px;
+		top: 30px;
+		cursor: pointer;
+		transition: 0.2s ease;
+	}
+
+	i.icon:hover {
+		filter: invert(40%)
+	}
+
+	i.icon::before {
+		font-size: 40px;
+	}
+}
+
+.social-media {
+	margin: 30px 50px;
+	display: flex;
+	justify-content: space-around;
+
+	img {
+		width: 50px;
+		transition: 0.2s ease;
+	}
+
+	img:hover {
+		filter: invert(40%)
+	}
+}
