@@ -9,6 +9,7 @@ import Navbar from './Components/Navbar/Navbar';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
+import Competition from './Components/Competition/Competition';
 import Competitions from './Components/Competitions/Competitions';
 import Members from './Components/Members/Members';
 
@@ -22,6 +23,7 @@ root.render(
         <Route path="/klubist" element={<About />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/liikmed" element={<Members />} />
+        <Route path="/voistlused/:voistlus" element={<Competition />} />
         <Route path="/voistlused" element={<Competitions />} />
         <Route path="*" element={<Homepage />} />
       </Routes>

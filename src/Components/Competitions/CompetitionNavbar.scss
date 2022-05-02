@@ -1,0 +1,54 @@
+.competition-navbar {
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	border-bottom: 5px solid black;
+
+	h2 {
+		display: inline;
+	}
+
+	h2:hover {
+		cursor: pointer;
+		color: gray
+	}
+
+	h2.underline {
+		text-decoration: underline;
+	}
+}
+
+.mobile {
+	display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.competition-navbar {
+		width: 100%;
+
+		h2 {
+			display: none;
+		}
+	}
+
+	.mobile {
+		display: block !important;
+	}
+
+	.ui.dropdown.mobile {
+		width: auto;
+		border: 0;
+
+		i {
+			float: left;
+		}
+	}
+
+	.ui.dropdown>.text {
+		font-size: 25px;
+		font-weight: 700;
+		text-decoration: underline;
+		margin-right: 5px;
+	}
+}
