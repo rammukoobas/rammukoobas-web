@@ -25,6 +25,7 @@ function Members() {
 						{renderMembers()}
 					</tbody>
 				</table>
+				<h1 className='center'>...</h1>
 			</div>
 		</section>
 	)
