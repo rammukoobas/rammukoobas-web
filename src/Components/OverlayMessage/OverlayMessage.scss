@@ -1,0 +1,30 @@
+.overlay {
+	position: absolute;
+	background: rgba(2, 2, 2, 0.203);
+	z-index: 10;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+
+	.messageBox {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 200px;
+		width: 320px;
+		background-color: white;
+		border: 5px solid black;
+
+		h2 {
+			margin-top: 40px !important;
+			margin-bottom: 20px !important;
+		}
+
+		.button {
+			margin: auto;
+			display: block
+		}
+	}
+}

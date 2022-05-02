@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import emailjs from "emailjs-com"
 
 import '../../../Competitions/Competitions.scss'
 
@@ -15,7 +16,8 @@ import PaintedByKiilakas from './Sponsorid/painted-by-kiilakas-logo.png'
 import TartekPlus from './Sponsorid/Tartekplus-logo_01.png'
 import ViljandiHansapaevad from './Sponsorid/viljandi_hansapäevad.png'
 import Rammukoobas from '../../../../imgs/Rammukoobas.png'
-import { List } from 'semantic-ui-react'
+import { Form, List, Button } from 'semantic-ui-react'
+import OverlayMessage from '../../../OverlayMessage/OverlayMessage'
 
 function Info() {
   return (
@@ -113,11 +115,104 @@ function Rules() {
   )
 }
 
-function Register() {
+function submitRegistration(e, setFormError, setSent, setErrorSending) {
+  e.preventDefault()
+  const sisu = Object.fromEntries(new FormData(e.target))
+  for (let el of Object.keys(sisu)) {
+    if (sisu[el] === "") {
+      setFormError(true)
+      return
+    }
+  }
+  emailjs.send("service_m8bfg0v", "template_kpvhezr", sisu, "DaGgmdahXul6skGgf")
+    .then(response => {
+      setSent(true)
+      console.log("E-kiri saadetud: ", response)
+    })
+    .catch(error => {
+      setSent(true)
+      setErrorSending(true)
+      console.log("VIGA", error)
+    })
+}
+
+function Register({ formError, setFormError }) {
+
+  const [sent, setSent] = useState(false)
+  const [errorSending, setErrorSending] = useState(false)
 
   return (
     <div className='info-div'>
-      <h2>Registreerumiseks palume saata kirja e-mailile:</h2>
+      <h2>Registreerumiseks palume täita järgneva avalduse:</h2>
+      <h3>NB! Tegemist on MTÜ Rammuklubi võistlusega ja eelregistreerimisega osavõtumaksu ei ole. Kuni 25.05.2022 kuupäevani saab eelregistreerida osalejaks mailiaadressil rammumeesrammunaine@gmail.com . Peale 25.05.2022 kuupäeva on osavõtumaks 50€ ühe osaleja kohta.</h3>
+      <Form onSubmit={(e) => submitRegistration(e, setFormError, setSent, setErrorSending.bind(this))}>
+        <Form.Field>
+          <label>1. Ees- ja perekonnanimi</label>
+          <input name="nimi" placeholder='Ees- ja perekonnanimi' />
+        </Form.Field>
+        <Form.Field>
+          <label>2. Vanus</label>
+          <input name="vanus" placeholder='Vanus' />
+        </Form.Field>
+        <Form.Field>
+          <label>3. Pikkus</label>
+          <input name="pikkus" placeholder='Pikkus (cm)' />
+        </Form.Field>
+        <Form.Field>
+          <label>4. Kaal</label>
+          <input name="kaal" placeholder='Kaal (kg)' />
+        </Form.Field>
+        <Form.Field>
+          <label>5. Võistlusklass</label>
+          <input name="voistlusklass" placeholder='Võistlusklass' />
+        </Form.Field>
+        <Form.Field>
+          <label>6. Klubi, mida sportlane esindab</label>
+          <input name="klubi" placeholder='Klubi' />
+        </Form.Field>
+        <Form.Field>
+          <label>7. Linn, mida sportlane esindab</label>
+          <input name="linn" placeholder='Linn' />
+        </Form.Field>
+        <Form.Field>
+          <label>8. Telefoni number</label>
+          <input name="telefon" placeholder='nt 55565565' />
+        </Form.Field>
+        <Form.Field>
+          <label>9. E-posti aadress</label>
+          <input name="email" placeholder='nt ats.ploom@gmail.com' />
+        </Form.Field>
+        <Form.Field>
+          <label>10. T-Särgi suurus</label>
+          <input name="sargi_suurus" placeholder='nt XS, M, L, XXL jne' />
+        </Form.Field>
+        <Form.Field>
+          <label>11. Lemmiktoit</label>
+          <input name="lemmiktoit" placeholder='Lemmiktoit' />
+        </Form.Field>
+        <Form.Field>
+          <label>12. Lemmikvärv</label>
+          <input name="lemmikvarv" placeholder='Lemmikvärv' />
+        </Form.Field>
+        <Form.Field>
+          <label>13. Sünnikoht</label>
+          <input name="sunnikoht" placeholder='Sünnikoht' />
+        </Form.Field>
+        <Form.Field>
+          <label>14. Lemmik jõu- või rammuala</label>
+          <input name="lemmikala" placeholder='Lemmik jõu- või rammuala' />
+        </Form.Field>
+        <Form.Field>
+          <label>15. Palju rinnalt surud?</label>
+          <input name="rinnalt" placeholder='Raskus' />
+        </Form.Field>
+        {formError &&
+          <h4 style={{ "color": "maroon" }}>*Mingi sisend on jäänud sul täitmata! Palun kontrolli üle ja proovi uuesti registreerida.</h4>
+        }
+        <Button className='button' type='submit'>REGISTREERI</Button>
+      </Form>
+
+      <h2>Alternatiivselt registreerumiseks palume saata kirja e-mailile:</h2>
       <a href="mailto:rammumeesrammunaine@gmail.com"><h2>rammumeesrammunaine@gmail.com</h2></a>
 
       <h2>Infoga:</h2>
@@ -138,6 +233,15 @@ function Register() {
         <List.Item><h3>Lemmik jõu- või rammuala</h3></List.Item>
         <List.Item><h3>Palju rinnalt surud?</h3></List.Item>
       </List>
+
+      {errorSending && sent ?
+        <OverlayMessage message={"ERROR! Registreering ei õnnestunud"} closeFunc={() => setSent(false)} />
+        :
+        (sent ?
+          <OverlayMessage message={"Registreering õnnestus!"} closeFunc={() => setSent(false)} />
+          : null)
+      }
+
     </div>
   )
 }
@@ -145,6 +249,8 @@ function Register() {
 function ViljandiRammukad04062022() {
 
   const [infoDisplayed, setInfoDisplayed] = useState("info")
+
+  const [formError, setFormError] = useState(false)
   return (
     <section className='competition'>
       <h1>Viljandi Rammumees ja Rammunaine 2022</h1>
@@ -161,7 +267,7 @@ function ViljandiRammukad04062022() {
           <Rules />
         }
         {infoDisplayed === "register" &&
-          <Register />
+          <Register formError={formError} setFormError={setFormError.bind(this)} />
         }
       </div>
 

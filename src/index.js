@@ -12,6 +12,7 @@ import Contact from './Components/Contact/Contact';
 import Competition from './Components/Competition/Competition';
 import Competitions from './Components/Competitions/Competitions';
 import Members from './Components/Members/Members';
+import Footer from './Components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +28,7 @@ root.render(
         <Route path="/voistlused" element={<Competitions />} />
         <Route path="*" element={<Homepage />} />
       </Routes>
+      <Footer />
     </HashRouter>
 
   </React.StrictMode>

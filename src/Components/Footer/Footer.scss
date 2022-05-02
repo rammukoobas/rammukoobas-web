@@ -1,0 +1,56 @@
+.footer {
+	border-top: 5px solid black;
+	display: block;
+	height: auto;
+	justify-content: center;
+
+	h2 {
+		text-align: center;
+		width: 100%;
+		margin-top: 20px !important;
+		margin-bottom: auto !important;
+	}
+
+	.social-media {
+		justify-content: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+
+		img {
+			margin: 10px;
+		}
+	}
+
+	.fotode-omanik {
+		display: flex;
+		width: 300px;
+		margin: auto;
+		justify-content: center;
+
+		p {
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+
+		h4 {
+			margin-top: auto !important;
+			margin-bottom: auto !important;
+		}
+
+		a {
+			display: block;
+			height: 20px;
+			margin-top: auto;
+			margin-bottom: auto;
+			color: black;
+		}
+
+		a:hover {
+			color: gray
+		}
+
+		img {
+			width: 20px;
+		}
+	}
+}

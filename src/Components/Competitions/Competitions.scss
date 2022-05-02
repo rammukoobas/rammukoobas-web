@@ -122,11 +122,28 @@
 	.ui.list>.item {
 		font-family: 'Chakra Petch', sans-serif !important;
 		font-size: 20px;
+
+		h3 {
+			margin-left: 7px;
+		}
 	}
 }
 
 .inline {
 	display: inline;
+}
+
+.ui.form {
+	font-family: 'Chakra Petch', sans-serif !important;
+
+	.field>label {
+		font-size: 16px;
+	}
+}
+
+.ui.form .ui.button {
+	display: block;
+	margin: auto;
 }
 
 .sponsors {
@@ -192,6 +209,7 @@
 			text-decoration: underline;
 		}
 	}
+
 
 	.info-div .ui.list,
 	.info-div .ui.ordered.list {

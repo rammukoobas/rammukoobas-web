@@ -24,6 +24,31 @@ h1,h2,h3,h4,h5,p,span, .ui.dropdown>.text {
   font-family: 'Chakra Petch', sans-serif!important;
 }
 
+.ui.button {
+  background-color: black!important;
+  transition: 0.2s ease;
+}
+
+.ui.button:hover {
+ background-color: white!important;
+}
+.ui.button[type="submit"],
+.ui.button[type="text"]
+ {
+  color:white!important;
+  font-family: 'Chakra Petch', sans-serif!important;
+  font-size: 18px;
+  border-radius: 0;
+  border: 5px solid black;
+}
+
+.ui.button[type="submit"]:hover,
+.ui.button[type="text"]:hover
+{
+  color:black!important;
+}
+
+
 .display-flex {
   display: flex;
 }
