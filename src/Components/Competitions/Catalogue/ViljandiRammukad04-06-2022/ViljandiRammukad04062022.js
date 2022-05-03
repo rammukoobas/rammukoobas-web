@@ -16,6 +16,9 @@ import PaintedByKiilakas from './Sponsorid/painted-by-kiilakas-logo.png'
 import TartekPlus from './Sponsorid/Tartekplus-logo_01.png'
 import ViljandiHansapaevad from './Sponsorid/viljandi_hansapäevad.png'
 import Rammukoobas from '../../../../imgs/Rammukoobas.png'
+import Kultuurikapital from './Sponsorid//kultuurikapital.png'
+import Sakala from './Sponsorid/sakala.png'
+import ViljandiLinn from './Sponsorid/viljandi_linn.png'
 import { Form, List, Button } from 'semantic-ui-react'
 import OverlayMessage from '../../../OverlayMessage/OverlayMessage'
 
@@ -302,6 +305,15 @@ function ViljandiRammukad04062022() {
           </div>
           <div className='sponsor'>
             <img src={TartekPlus} alt="sponsor" />
+          </div>
+          <div className='sponsor'>
+            <img src={Kultuurikapital} alt="sponsor" />
+          </div>
+          <div className='sponsor'>
+            <img src={ViljandiLinn} alt="sponsor" />
+          </div>
+          <div className='sponsor'>
+            <img src={Sakala} alt="sponsor" />
           </div>
         </div>
       </div>
