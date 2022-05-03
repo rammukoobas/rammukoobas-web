@@ -29,9 +29,11 @@ function About() {
 				<div className='sponsori-pildid'>
 					<div className='logo'>
 						<img src={SkacronLogo} alt="skarcon logo" />
+						<a href='http://www.skarcon.eu/' target="_blank" rel="noopener noreferrer"><h3>Skarcon OÜ</h3></a>
 					</div>
 					<div className='logo'>
 						<img src={KiilakaLogo} alt="kiilaka logo" />
+						<a href='http://kiilakas.ee/' target="_blank" rel="noopener noreferrer"><h3>Kiilaka Autod OÜ</h3></a>
 					</div>
 
 				</div>

@@ -127,6 +127,7 @@ function submitRegistration(e, setFormError, setSent, setErrorSending) {
   emailjs.send("service_m8bfg0v", "template_kpvhezr", sisu, "DaGgmdahXul6skGgf")
     .then(response => {
       setSent(true)
+      document.getElementById("reagmise-vorm").reset();
       console.log("E-kiri saadetud: ", response)
     })
     .catch(error => {
@@ -145,7 +146,7 @@ function Register({ formError, setFormError }) {
     <div className='info-div'>
       <h2>Registreerumiseks palume täita järgneva avalduse:</h2>
       <h3>NB! Tegemist on MTÜ Rammuklubi võistlusega ja eelregistreerimisega osavõtumaksu ei ole. Kuni 25.05.2022 kuupäevani saab eelregistreerida osalejaks mailiaadressil rammumeesrammunaine@gmail.com . Peale 25.05.2022 kuupäeva on osavõtumaks 50€ ühe osaleja kohta.</h3>
-      <Form onSubmit={(e) => submitRegistration(e, setFormError, setSent, setErrorSending.bind(this))}>
+      <Form id='reagmise-vorm' onSubmit={(e) => submitRegistration(e, setFormError, setSent, setErrorSending.bind(this))}>
         <Form.Field>
           <label>1. Ees- ja perekonnanimi</label>
           <input name="nimi" placeholder='Ees- ja perekonnanimi' />
