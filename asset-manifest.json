@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0993ca7.chunk.css",
-    "main.js": "/static/js/main.70724d2b.chunk.js",
-    "main.js.map": "/static/js/main.70724d2b.chunk.js.map",
+    "main.css": "/static/css/main.339e11b2.chunk.css",
+    "main.js": "/static/js/main.d5bcf4a2.chunk.js",
+    "main.js.map": "/static/js/main.d5bcf4a2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.16495640.js",
     "runtime-main.js.map": "/static/js/runtime-main.16495640.js.map",
     "static/css/2.7dce832d.chunk.css": "/static/css/2.7dce832d.chunk.css",
-    "static/js/2.38ebed81.chunk.js": "/static/js/2.38ebed81.chunk.js",
-    "static/js/2.38ebed81.chunk.js.map": "/static/js/2.38ebed81.chunk.js.map",
+    "static/js/2.67b68692.chunk.js": "/static/js/2.67b68692.chunk.js",
+    "static/js/2.67b68692.chunk.js.map": "/static/js/2.67b68692.chunk.js.map",
     "static/js/3.e5cbcb66.chunk.js": "/static/js/3.e5cbcb66.chunk.js",
     "static/js/3.e5cbcb66.chunk.js.map": "/static/js/3.e5cbcb66.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7dce832d.chunk.css.map": "/static/css/2.7dce832d.chunk.css.map",
-    "static/css/main.b0993ca7.chunk.css.map": "/static/css/main.b0993ca7.chunk.css.map",
-    "static/js/2.38ebed81.chunk.js.LICENSE.txt": "/static/js/2.38ebed81.chunk.js.LICENSE.txt",
+    "static/css/main.339e11b2.chunk.css.map": "/static/css/main.339e11b2.chunk.css.map",
+    "static/js/2.67b68692.chunk.js.LICENSE.txt": "/static/js/2.67b68692.chunk.js.LICENSE.txt",
     "static/media/Rammukoobas.7a8c58b9.png": "/static/media/Rammukoobas.7a8c58b9.png",
     "static/media/Rammukoobas_stroked.0a802b70.png": "/static/media/Rammukoobas_stroked.0a802b70.png",
     "static/media/Tartekplus-logo_01.06c83bd1.png": "/static/media/Tartekplus-logo_01.06c83bd1.png",
@@ -23,9 +23,11 @@
     "static/media/instagram.d7dce509.png": "/static/media/instagram.d7dce509.png",
     "static/media/Homepage.scss": "/static/media/kiilakas.1cbb434b.jpg",
     "static/media/kleebikum.f8065b6d.jpg": "/static/media/kleebikum.f8065b6d.jpg",
+    "static/media/koverkang.e665a78e.png": "/static/media/koverkang.e665a78e.png",
     "static/media/kultuurikapital.0a10d1a3.png": "/static/media/kultuurikapital.0a10d1a3.png",
     "static/media/mulgi_kontsert.be4f8dd0.jpg": "/static/media/mulgi_kontsert.be4f8dd0.jpg",
     "static/media/painted-by-kiilakas-logo.4119d761.png": "/static/media/painted-by-kiilakas-logo.4119d761.png",
+    "static/media/santrust.22b626f1.png": "/static/media/santrust.22b626f1.png",
     "static/media/skarcon.69b7fe56.jpg": "/static/media/skarcon.69b7fe56.jpg",
     "static/media/skarcon.e7726f83.png": "/static/media/skarcon.e7726f83.png",
     "static/media/About.scss": "/static/media/sumin.070916d8.jpg",
@@ -34,8 +36,8 @@
   "entrypoints": [
     "static/js/runtime-main.16495640.js",
     "static/css/2.7dce832d.chunk.css",
-    "static/js/2.38ebed81.chunk.js",
-    "static/css/main.b0993ca7.chunk.css",
-    "static/js/main.70724d2b.chunk.js"
+    "static/js/2.67b68692.chunk.js",
+    "static/css/main.339e11b2.chunk.css",
+    "static/js/main.d5bcf4a2.chunk.js"
   ]
 }
