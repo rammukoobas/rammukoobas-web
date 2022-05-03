@@ -11,6 +11,10 @@ function Competition() {
 	const params = useParams()
 	const CompetitionInfoComponent = competitonDictionary[params.voistlus]
 
+	if (!CompetitionInfoComponent) {
+		return <h1 style={{ "paddingTop": "150px", "margin": "0" }}>URL / LINK ON EBAKORREKTNE. KONTROLLI SEDA PALUN!</h1>
+	}
+
 	return <CompetitionInfoComponent />
 }
 
