@@ -175,6 +175,15 @@
 	margin: auto;
 }
 
+.live {
+	background-color: black;
+	iframe {
+		display: block;
+		margin: auto;
+		margin-top: 30px;
+	}
+}
+
 
 @media only screen and (max-width: 767px) {
 	.section-competition {
@@ -183,6 +192,10 @@
 		h1 {
 			font-size: 25px;
 		}
+	}
+
+	.live iframe {
+		width: 100%;
 	}
 
 	.past-banner {

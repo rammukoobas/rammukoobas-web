@@ -22,6 +22,7 @@ import ViljandiLinn from './Sponsorid/viljandi_linn.png'
 import IPharma from './Sponsorid/iPharma.png'
 import LihaSobrad from './Sponsorid/lihasobrad.png'
 import Vaderstad from './Sponsorid/vaderstad.png'
+import Mitterassa from './Sponsorid/mitterassa.png'
 import { Form, List, Button } from 'semantic-ui-react'
 import OverlayMessage from '../../../OverlayMessage/OverlayMessage'
 
@@ -253,6 +254,14 @@ function Register({ formError, setFormError }) {
   )
 }
 
+function Live() {
+  return (
+    <div className='live'>
+      <iframe title="otseülekanne" src="" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  )
+}
+
 function ViljandiRammukad04062022() {
 
   const [infoDisplayed, setInfoDisplayed] = useState("info")
@@ -276,6 +285,8 @@ function ViljandiRammukad04062022() {
         {infoDisplayed === "register" &&
           <Register formError={formError} setFormError={setFormError.bind(this)} />
         }
+        {infoDisplayed === "live" &&
+          <Live />}
       </div>
 
 
@@ -326,6 +337,9 @@ function ViljandiRammukad04062022() {
           </div>
           <div className='sponsor'>
             <img src={Vaderstad} alt="sponsor" />
+          </div>
+          <div className='sponsor'>
+            <img src={Mitterassa} alt="sponsor" />
           </div>
         </div>
       </div>
