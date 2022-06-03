@@ -257,7 +257,7 @@ function Register({ formError, setFormError }) {
 function Live() {
   return (
     <div className='live'>
-      <iframe title="otseülekanne" src="https://player.vimeo.com/video/716485172?h=7496142ba9" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <iframe title="otseülekanne" src="https://player.vimeo.com/video/716485172?h=7496142ba9" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   )
 }
