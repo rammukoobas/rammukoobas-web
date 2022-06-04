@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.97b8ebde.chunk.css",
-    "main.js": "/static/js/main.0629b335.chunk.js",
-    "main.js.map": "/static/js/main.0629b335.chunk.js.map",
+    "main.js": "/static/js/main.9ef04e12.chunk.js",
+    "main.js.map": "/static/js/main.9ef04e12.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.16495640.js",
     "runtime-main.js.map": "/static/js/runtime-main.16495640.js.map",
     "static/css/2.7dce832d.chunk.css": "/static/css/2.7dce832d.chunk.css",
@@ -31,9 +31,11 @@
     "static/media/mulgi_kontsert.be4f8dd0.jpg": "/static/media/mulgi_kontsert.be4f8dd0.jpg",
     "static/media/painted-by-kiilakas-logo.4119d761.png": "/static/media/painted-by-kiilakas-logo.4119d761.png",
     "static/media/santrust.22b626f1.png": "/static/media/santrust.22b626f1.png",
+    "static/media/santrust.4522b097.png": "/static/media/santrust.4522b097.png",
     "static/media/skarcon.69b7fe56.jpg": "/static/media/skarcon.69b7fe56.jpg",
     "static/media/skarcon.e7726f83.png": "/static/media/skarcon.e7726f83.png",
     "static/media/About.scss": "/static/media/sumin.070916d8.jpg",
+    "static/media/unditalu.8a40a093.png": "/static/media/unditalu.8a40a093.png",
     "static/media/vaderstad.ced3abeb.png": "/static/media/vaderstad.ced3abeb.png",
     "static/media/viljandi_hansapäevad.8bc31ec8.png": "/static/media/viljandi_hansapäevad.8bc31ec8.png"
   },
@@ -42,6 +44,6 @@
     "static/css/2.7dce832d.chunk.css",
     "static/js/2.67b68692.chunk.js",
     "static/css/main.97b8ebde.chunk.css",
-    "static/js/main.0629b335.chunk.js"
+    "static/js/main.9ef04e12.chunk.js"
   ]
 }
