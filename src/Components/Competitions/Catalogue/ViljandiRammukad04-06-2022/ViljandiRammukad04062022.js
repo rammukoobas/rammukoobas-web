@@ -23,6 +23,8 @@ import IPharma from './Sponsorid/iPharma.png'
 import LihaSobrad from './Sponsorid/lihasobrad.png'
 import Vaderstad from './Sponsorid/vaderstad.png'
 import Mitterassa from './Sponsorid/mitterassa.png'
+import UndiTalu from './Sponsorid/unditalu.png'
+import SanTrust from './Sponsorid/santrust.png'
 import { Form, List, Button } from 'semantic-ui-react'
 import OverlayMessage from '../../../OverlayMessage/OverlayMessage'
 
@@ -340,6 +342,12 @@ function ViljandiRammukad04062022() {
           </div>
           <div className='sponsor'>
             <img src={Mitterassa} alt="sponsor" />
+          </div>
+          <div className='sponsor'>
+            <img src={UndiTalu} alt="sponsor" />
+          </div>
+          <div className='sponsor'>
+            <img src={SanTrust} alt="sponsor" />
           </div>
         </div>
       </div>
