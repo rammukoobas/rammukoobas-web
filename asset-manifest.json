@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b9dfb66.chunk.css",
+    "main.css": "/static/css/main.801ebb1e.chunk.css",
     "main.js": "/static/js/main.6cf25202.chunk.js",
     "main.js.map": "/static/js/main.6cf25202.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.16495640.js",
@@ -12,7 +12,7 @@
     "static/js/3.e5cbcb66.chunk.js.map": "/static/js/3.e5cbcb66.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7dce832d.chunk.css.map": "/static/css/2.7dce832d.chunk.css.map",
-    "static/css/main.3b9dfb66.chunk.css.map": "/static/css/main.3b9dfb66.chunk.css.map",
+    "static/css/main.801ebb1e.chunk.css.map": "/static/css/main.801ebb1e.chunk.css.map",
     "static/js/2.38ebed81.chunk.js.LICENSE.txt": "/static/js/2.38ebed81.chunk.js.LICENSE.txt",
     "static/media/Rammukoobas.7a8c58b9.png": "/static/media/Rammukoobas.7a8c58b9.png",
     "static/media/Rammukoobas_stroked.0a802b70.png": "/static/media/Rammukoobas_stroked.0a802b70.png",
@@ -43,7 +43,7 @@
     "static/js/runtime-main.16495640.js",
     "static/css/2.7dce832d.chunk.css",
     "static/js/2.38ebed81.chunk.js",
-    "static/css/main.3b9dfb66.chunk.css",
+    "static/css/main.801ebb1e.chunk.css",
     "static/js/main.6cf25202.chunk.js"
   ]
 }
