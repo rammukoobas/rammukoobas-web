@@ -275,6 +275,12 @@ function ViljandiRammukad04062022() {
       <div className='social-media-event' onClick={() => { window.open("https://www.facebook.com/events/1306534829867736") }}>
         <h3>Facebook event: </h3><img src={FacebookLogo} alt='facebook-logo' />
       </div>
+      <div className='results center'>
+        <a href='https://docs.google.com/spreadsheets/d/1obkChn5uqPLf_4cuaCrbXbd7S_G841r5pHubyiHDI98/edit?usp=sharing' target="_blank" rel="noopener noreferrer" >
+          <h2>VÕISTLUSE TULEMUSED: MEHED</h2>
+        </a>
+      </div>
+
 
       <div className='content'>
         <CompetitionNavbar infoDisplayed={infoDisplayed} setInfoDisplayed={setInfoDisplayed.bind(this)} />
@@ -284,9 +290,9 @@ function ViljandiRammukad04062022() {
         {infoDisplayed === "rules" &&
           <Rules />
         }
-        {infoDisplayed === "register" &&
+        {/* {infoDisplayed === "register" &&
           <Register formError={formError} setFormError={setFormError.bind(this)} />
-        }
+        } */}
         {infoDisplayed === "live" &&
           <Live />}
       </div>
