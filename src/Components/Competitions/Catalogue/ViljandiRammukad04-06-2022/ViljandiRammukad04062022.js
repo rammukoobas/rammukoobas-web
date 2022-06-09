@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Icon, Form, List, Button } from 'semantic-ui-react'
 import emailjs from "emailjs-com"
 
 import '../../../Competitions/Competitions.scss'
@@ -6,6 +7,8 @@ import '../../../Competitions/Competitions.scss'
 import FacebookLogo from '../../../../imgs/facebook.png'
 
 import CompetitionNavbar from '../../CompetitionNavbar'
+
+import Tulemus from '../ViljandiRammukad04-06-2022/Tulemused/Viljandi-Rammumehe-võistluse-tulemused.pdf'
 
 import Skarcon from './Sponsorid/skarcon.jpg'
 import Alecoq from './Sponsorid/alecoq.png'
@@ -25,7 +28,7 @@ import Vaderstad from './Sponsorid/vaderstad.png'
 import Mitterassa from './Sponsorid/mitterassa.png'
 import UndiTalu from './Sponsorid/unditalu.png'
 import SanTrust from './Sponsorid/santrust.png'
-import { Form, List, Button } from 'semantic-ui-react'
+
 import OverlayMessage from '../../../OverlayMessage/OverlayMessage'
 
 function Info() {
@@ -264,6 +267,70 @@ function Live() {
   )
 }
 
+function Media() {
+  return (
+    <div>
+      <List>
+        <List.Item className="media">
+          <h3>DELFI:</h3>
+          <a href='https://sport.delfi.ee/artikkel/120016268/fotod-viljandis-peetud-rammumehe-voistlusel-pustitati-kaks-maailmarekordit' target="_blank" rel="noopener noreferrer" >
+            <p>https://sport.delfi.ee/artikkel/120016268/fotod-viljandis-peetud-rammumehe-voistlusel-pustitati-kaks-maailmarekordit</p>
+          </a>
+        </List.Item>
+
+        <List.Item className="media">
+          <h3>SAKALA:</h3>
+          <a href='https://sakala.postimees.ee/7538227/viljandis-pustitati-kaks-maailmarekordit' target="_blank" rel="noopener noreferrer" >
+            <p>https://sakala.postimees.ee/7538227/viljandis-pustitati-kaks-maailmarekordit</p>
+          </a>
+        </List.Item>
+
+        <List.Item className="media">
+          <h3>ÕHTULEHT:</h3>
+          <a href='https://sport.ohtuleht.ee/1063678/fotod-voimas-rammumehed-pustitasid-viljandis-kaks-maailmarekordit' target="_blank" rel="noopener noreferrer" >
+            <p>https://sport.ohtuleht.ee/1063678/fotod-voimas-rammumehed-pustitasid-viljandis-kaks-maailmarekordit</p>
+          </a>
+        </List.Item>
+
+        <List.Item className="media">
+          <h3>BARBEND:</h3>
+          <a href='https://barbend.com/rauno-heinla-world-record-silver-dollar-deadlift-580-kilograms/?fbclid=IwAR1T_F16uDwOWabdq7Sot-D8aSgAkIwBdadgKNfj6z78AffEv-vdGIVqRjk' target="_blank" rel="noopener noreferrer" >
+            <p>https://barbend.com/rauno-heinla-world-record-silver-dollar-deadlift-580-kilograms/?fbclid=IwAR1T_F16uDwOWabdq7Sot-D8aSgAkIwBdadgKNfj6z78AffEv-vdGIVqRjk</p>
+          </a>
+        </List.Item>
+
+        <List.Item className="media">
+          <h3>FITNESSVOLT:</h3>
+          <a href='https://fitnessvolt.com/rauno-heinla-silver-dollar-deadlift-world-record/?fbclid=IwAR0vfExuTEBrl-RiKOZU9ND7WtRyWnCcJNyquXNbcDbzqoP8-1vXG3HNPys' target="_blank" rel="noopener noreferrer" >
+            <p>https://fitnessvolt.com/rauno-heinla-silver-dollar-deadlift-world-record/?fbclid=IwAR0vfExuTEBrl-RiKOZU9ND7WtRyWnCcJNyquXNbcDbzqoP8-1vXG3HNPys</p>
+          </a>
+        </List.Item>
+
+        <List.Item className="media">
+          <h3>WORLD DEADLIFTING COUNCIL:</h3>
+          <a href='https://wdc.international/world-sddl-records?fbclid=IwAR0CRXLgO6B3CM0GO9tis1ugmU71IHuVshqOeEx1RaRWjH3eN7dkTXuA-3I' target="_blank" rel="noopener noreferrer" >
+            <p>https://wdc.international/world-sddl-records?fbclid=IwAR0CRXLgO6B3CM0GO9tis1ugmU71IHuVshqOeEx1RaRWjH3eN7dkTXuA-3I</p>
+          </a>
+        </List.Item>
+
+        <List.Item className="media">
+          <h3>BREAKING MUSCLE:</h3>
+          <a href='https://breakingmuscle.com/strongman-rauno-heinla-silver-dollar-deadlift-world-record-1278-pounds/' target="_blank" rel="noopener noreferrer" >
+            <p>https://breakingmuscle.com/strongman-rauno-heinla-silver-dollar-deadlift-world-record-1278-pounds/</p>
+          </a>
+        </List.Item>
+
+        <List.Item className="media">
+          <h3>GENERATION IRON:</h3>
+          <a href='https://generationiron.com/rauno-heinla-silver-dollar-dealift-world-record/' target="_blank" rel="noopener noreferrer" >
+            <p>https://generationiron.com/rauno-heinla-silver-dollar-dealift-world-record/</p>
+          </a>
+        </List.Item>
+      </List>
+    </div>
+  )
+}
+
 function ViljandiRammukad04062022() {
 
   const [infoDisplayed, setInfoDisplayed] = useState("info")
@@ -276,7 +343,7 @@ function ViljandiRammukad04062022() {
         <h3>Facebook event: </h3><img src={FacebookLogo} alt='facebook-logo' />
       </div>
       <div className='results center'>
-        <a href='https://docs.google.com/spreadsheets/d/1obkChn5uqPLf_4cuaCrbXbd7S_G841r5pHubyiHDI98/edit?usp=sharing' target="_blank" rel="noopener noreferrer" >
+        <a href={Tulemus} target="_blank" rel="noopener noreferrer" >
           <h2>VÕISTLUSE TULEMUSED: MEHED</h2>
         </a>
       </div>
@@ -294,7 +361,19 @@ function ViljandiRammukad04062022() {
           <Register formError={formError} setFormError={setFormError.bind(this)} />
         } */}
         {infoDisplayed === "live" &&
-          <Live />}
+          <Live />
+        }
+      </div>
+
+      <div className='media'>
+        <div className='center'>
+          <h2 className='media-headline'><Icon name="newspaper outline"></Icon> MEEDIA KAJASTUS: <Icon name="newspaper outline"></Icon></h2>
+        </div>
+
+        <Media />
+
+        <div className='border-3px-80percent'>
+        </div>
       </div>
 
 

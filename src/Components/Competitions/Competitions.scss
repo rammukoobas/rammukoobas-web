@@ -35,11 +35,11 @@
 	margin-top: 10px !important;
 	max-width: 400px;
 	margin: auto;
-	border: 5px solid rgb(3, 74, 3);
+	border: 5px solid maroon;
 	;
 
 	h2 {
-		color: rgb(3, 74, 3);
+		color: maroon;
 		word-break: break-word;
 	}
 
@@ -52,6 +52,12 @@
 .nimekiri {
 	.item {
 		cursor: pointer;
+	}
+}
+
+.media {
+	h3 {
+		margin: 0
 	}
 }
 
@@ -83,6 +89,32 @@
 	}
 }
 
+.media-headline {
+	border-bottom: 3px solid black;
+	width: 80%;
+	margin: auto;
+}
+
+.media {
+	margin-bottom: 15px;
+}
+
+.border-3px-80percent {
+	border-top: 3px solid black;
+	width: 80%;
+	margin: auto;
+}
+
+.competition-item {
+	.competition-heading {
+		width: 100%;
+	}
+
+	.competition-img {
+		max-width: 400px;
+		width: auto;
+	}
+}
 
 //Competition component part
 .competition {
