@@ -344,7 +344,7 @@ function ViljandiRammukad04062022() {
       </div>
       <div className='results center'>
         <a href={Tulemus} target="_blank" rel="noopener noreferrer" >
-          <h2>VÕISTLUSE TULEMUSED: MEHED</h2>
+          <h2>VÕISTLUSE TULEMUSED</h2>
         </a>
       </div>
 
