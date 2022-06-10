@@ -344,7 +344,12 @@ function ViljandiRammukad04062022() {
       </div>
       <div className='results center'>
         <a href={Tulemus} target="_blank" rel="noopener noreferrer" >
-          <h2>VÕISTLUSE TULEMUSED</h2>
+          <h2><Icon name="list ol" />VÕISTLUSE TULEMUSED</h2>
+        </a>
+      </div>
+      <div className='photos center'>
+        <a href="https://huli.pixieset.com/rammukoobas/" target="_blank" rel="noopener noreferrer" >
+          <h2><Icon name="photo" />FOTOD VÕISTLUSEST <Icon name="photo" /></h2>
         </a>
       </div>
 
