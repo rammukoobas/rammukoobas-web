@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Icon, Form, List, Button } from 'semantic-ui-react'
 import emailjs from "emailjs-com"
 
@@ -262,7 +262,7 @@ function Register({ formError, setFormError }) {
 function Live() {
   return (
     <div className='live'>
-      <iframe title="otseülekanne" src="https://player.vimeo.com/video/716485172?h=7496142ba9" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe title="otseülekanne" src="https://player.vimeo.com/video/716485172?h=7496142ba9" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
     </div>
   )
 }
@@ -331,11 +331,17 @@ function Media() {
   )
 }
 
-function ViljandiRammukad04062022() {
+function ViljandiRammukad04062022(props) {
 
   const [infoDisplayed, setInfoDisplayed] = useState("info")
 
   const [formError, setFormError] = useState(false)
+
+  useEffect(() => {
+    props.infoDisplayed ? setInfoDisplayed(props.infoDisplayed) : setInfoDisplayed("info")
+  }, [props.infoDisplayed])
+
+
   return (
     <section className='competition'>
       <h1>Viljandi Rammumees ja Rammunaine 2022</h1>
@@ -351,6 +357,9 @@ function ViljandiRammukad04062022() {
         <a href="https://huli.pixieset.com/rammukoobas/" target="_blank" rel="noopener noreferrer" >
           <h2><Icon name="photo" />FOTOD VÕISTLUSEST <Icon name="photo" /></h2>
         </a>
+      </div>
+      <div onClick={() => setInfoDisplayed("live")} className='photos center hover-cursor'>
+        <h2><Icon style={{ "color": "maroon" }} name="circle" />VÕISTLUSE SALVESTUS</h2>
       </div>
 
 

@@ -6,7 +6,7 @@ const competitonDictionary = {
 	"viljandi-04-06-2022": ViljandiRammukad04062022
 }
 
-function Competition() {
+function Competition(props) {
 
 	const params = useParams()
 	const CompetitionInfoComponent = competitonDictionary[params.voistlus]
@@ -15,7 +15,7 @@ function Competition() {
 		return <h1 style={{ "paddingTop": "150px", "margin": "0" }}>URL / LINK ON EBAKORREKTNE. KONTROLLI SEDA PALUN!</h1>
 	}
 
-	return <CompetitionInfoComponent />
+	return <CompetitionInfoComponent infoDisplayed={props.infoDisplayed} />
 }
 
 export default Competition

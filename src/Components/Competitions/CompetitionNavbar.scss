@@ -25,6 +25,10 @@
 	display: none !important;
 }
 
+.nav-dropdown i {
+	font-size: 30px;
+}
+
 @media only screen and (max-width: 767px) {
 	.competition-navbar {
 		width: 100%;
@@ -52,9 +56,5 @@
 		font-weight: 700;
 		text-decoration: underline;
 		margin-right: 5px;
-	}
-
-	div.visible.menu.transition {
-		min-height: 155px;
 	}
 }
