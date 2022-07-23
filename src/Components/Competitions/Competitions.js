@@ -17,8 +17,16 @@ function Competitions() {
 			<div className='upcoming-banner'>
 				<h1>TULEVASED VÕISTLUSED:</h1>
 			</div>
-			<h2 className='center'>----</h2>
+			<List className="nimekiri">
+				<List.Item onClick={() => routeChange("/voistlused/toilasadam-27-08-2022")}>
+					<div className='competition-item'>
+						<div className='competition-heading'>
+							<h2>27.08.2022</h2><h3>Eesti meistrivõistlused palgi surumises 2022</h3>
+						</div>
+					</div>
 
+				</List.Item>
+			</List>
 			<div className='past-banner'>
 				<h2>TOIMUNUD VÕISTLUSED:</h2>
 			</div>

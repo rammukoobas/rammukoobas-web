@@ -26,6 +26,7 @@ root.render(
         <Route path="/liikmed" element={<Members />} />
         <Route path="/voistlused/:voistlus" element={<Competition />} />
         <Route path="/voistlused/:voistlus/live" element={<Competition infoDisplayed="live" />} />
+        <Route path="/voistlused/:voistlus/register" element={<Competition infoDisplayed="register" />} />
         <Route path="/voistlused" element={<Competitions />} />
         <Route path="*" element={<Homepage />} />
       </Routes>

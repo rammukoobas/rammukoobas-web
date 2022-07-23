@@ -354,7 +354,7 @@ function ViljandiRammukad04062022(props) {
         </a>
       </div>
       <div className='photos center'>
-        <a href="https://huli.pixieset.com/rammukoobas/" target="_blank" rel="noopener noreferrer" >
+        <a href="https://photos.app.goo.gl/y85V7KuMR4bWCpiBA" target="_blank" rel="noopener noreferrer" >
           <h2><Icon name="photo" />FOTOD VÕISTLUSEST <Icon name="photo" /></h2>
         </a>
       </div>
