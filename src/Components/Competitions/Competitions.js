@@ -4,6 +4,7 @@ import { List } from 'semantic-ui-react'
 import './Competitions.scss'
 
 import Viljandi2022 from './Catalogue/CompetitionImages/2022Viljandi.jpg'
+import Palgimeister2022 from './Catalogue/CompetitionImages/2022Palgimeister.jpg'
 
 function Competitions() {
 
@@ -23,6 +24,7 @@ function Competitions() {
 						<div className='competition-heading'>
 							<h2>27.08.2022</h2><h3>Eesti meistrivõistlused palgi surumises 2022</h3>
 						</div>
+						<img className='competition-img' src={Palgimeister2022} />
 					</div>
 
 				</List.Item>
