@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.09f475e4.chunk.css",
-    "main.js": "/static/js/main.4607a811.chunk.js",
-    "main.js.map": "/static/js/main.4607a811.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.63fddd51.js",
-    "runtime-main.js.map": "/static/js/runtime-main.63fddd51.js.map",
+    "main.css": "/static/css/main.3f10aa56.chunk.css",
+    "main.js": "/static/js/main.ae3f7b39.chunk.js",
+    "main.js.map": "/static/js/main.ae3f7b39.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.16495640.js",
+    "runtime-main.js.map": "/static/js/runtime-main.16495640.js.map",
     "static/css/2.7dce832d.chunk.css": "/static/css/2.7dce832d.chunk.css",
-    "static/js/2.b845d81d.chunk.js": "/static/js/2.b845d81d.chunk.js",
-    "static/js/2.b845d81d.chunk.js.map": "/static/js/2.b845d81d.chunk.js.map",
-    "static/js/3.8bbcbef6.chunk.js": "/static/js/3.8bbcbef6.chunk.js",
-    "static/js/3.8bbcbef6.chunk.js.map": "/static/js/3.8bbcbef6.chunk.js.map",
+    "static/js/2.ee1028fe.chunk.js": "/static/js/2.ee1028fe.chunk.js",
+    "static/js/2.ee1028fe.chunk.js.map": "/static/js/2.ee1028fe.chunk.js.map",
+    "static/js/3.e5cbcb66.chunk.js": "/static/js/3.e5cbcb66.chunk.js",
+    "static/js/3.e5cbcb66.chunk.js.map": "/static/js/3.e5cbcb66.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7dce832d.chunk.css.map": "/static/css/2.7dce832d.chunk.css.map",
-    "static/css/main.09f475e4.chunk.css.map": "/static/css/main.09f475e4.chunk.css.map",
-    "static/js/2.b845d81d.chunk.js.LICENSE.txt": "/static/js/2.b845d81d.chunk.js.LICENSE.txt",
+    "static/css/main.3f10aa56.chunk.css.map": "/static/css/main.3f10aa56.chunk.css.map",
+    "static/js/2.ee1028fe.chunk.js.LICENSE.txt": "/static/js/2.ee1028fe.chunk.js.LICENSE.txt",
+    "static/media/2022Palgimeister.e1dfd22b.jpg": "/static/media/2022Palgimeister.e1dfd22b.jpg",
     "static/media/2022Viljandi.6f769acf.jpg": "/static/media/2022Viljandi.6f769acf.jpg",
     "static/media/Rammukoobas.7a8c58b9.png": "/static/media/Rammukoobas.7a8c58b9.png",
     "static/media/Rammukoobas_stroked.0a802b70.png": "/static/media/Rammukoobas_stroked.0a802b70.png",
@@ -42,10 +43,10 @@
     "static/media/viljandi_hansapäevad.8bc31ec8.png": "/static/media/viljandi_hansapäevad.8bc31ec8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.63fddd51.js",
+    "static/js/runtime-main.16495640.js",
     "static/css/2.7dce832d.chunk.css",
-    "static/js/2.b845d81d.chunk.js",
-    "static/css/main.09f475e4.chunk.css",
-    "static/js/main.4607a811.chunk.js"
+    "static/js/2.ee1028fe.chunk.js",
+    "static/css/main.3f10aa56.chunk.css",
+    "static/js/main.ae3f7b39.chunk.js"
   ]
 }
