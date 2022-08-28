@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import { Form, List, Button } from 'semantic-ui-react'
+import { Form, List, Button, Icon } from 'semantic-ui-react'
 import emailjs from "emailjs-com"
 
 import '../../../Competitions/Competitions.scss'
 
 import CompetitionNavbar from '../../CompetitionNavbar'
 import OverlayMessage from '../../../OverlayMessage/OverlayMessage'
+
+import Tulemus from './Tulemused/Palgi-meistrivõistluse-tulemused-2022.pdf'
+import Palgimeister2022 from '../CompetitionImages/2022Palgimeister.jpg'
 
 function Info() {
     return (
@@ -175,6 +178,21 @@ function Live() {
     )
 }
 
+function Media() {
+    return (
+        <div>
+            <List>
+                <List.Item className="media">
+                    <h3>ERR:</h3>
+                    <a href='https://www.err.ee/1608697525/toila-rannas-votsid-tugevad-naised-ja-mehed-mootu-palgisurumises' target="_blank" rel="noopener noreferrer" >
+                        <p>https://www.err.ee/1608697525/toila-rannas-votsid-tugevad-naised-ja-mehed-mootu-palgisurumises</p>
+                    </a>
+                </List.Item>
+            </List>
+        </div>
+    )
+}
+
 
 function EestiMeisterPalk27082022(props) {
 
@@ -190,23 +208,37 @@ function EestiMeisterPalk27082022(props) {
     return (
         <section className='competition'>
             <h1>Eesti meistrivõistlused palgi surumises 2022</h1>
+            <div className='results center'>
+                <a href={Tulemus} target="_blank" rel="noopener noreferrer" >
+                    <h2><Icon name="list ol" />VÕISTLUSE TULEMUSED</h2>
+                </a>
+            </div>
 
             <div className='content'>
-                <CompetitionNavbar infoDisplayed={infoDisplayed} setInfoDisplayed={setInfoDisplayed.bind(this)} allowRegister={true} />
+                <CompetitionNavbar infoDisplayed={infoDisplayed} setInfoDisplayed={setInfoDisplayed.bind(this)} allowRegister={false} />
                 {infoDisplayed === "info" &&
                     <Info />
                 }
                 {infoDisplayed === "rules" &&
                     <Rules />
                 }
-                {infoDisplayed === "register" &&
+                {/* {infoDisplayed === "register" &&
                     <Register formError={formError} setFormError={setFormError.bind(this)} />
-                }
+                } */}
                 {infoDisplayed === "live" &&
                     <Live />
                 }
             </div>
 
+            <div className='media'>
+                <div className='center'>
+                    <h2 className='media-headline'><Icon name="newspaper outline"></Icon> MEEDIA KAJASTUS: <Icon name="newspaper outline"></Icon></h2>
+                </div>
+
+                <Media />
+
+                <div className='border-3px-80percent'></div>
+            </div>
         </section>
     )
 }
