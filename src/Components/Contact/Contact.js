@@ -4,7 +4,17 @@ import './Contact.scss'
 import InstagramLogo from '../../imgs/instagram.png'
 import FacebookLogo from '../../imgs/facebook.png'
 
+import { Button, Popup } from 'semantic-ui-react'
+
 function Contact() {
+
+	const pangakonto = "EE272200221077993385"
+	const pangakontoNimi = "MTÜ RAMMUKLUBI"
+
+	const copyToClipboard = (text) => {
+		navigator.clipboard.writeText(text)
+	}
+
 	return (
 		<section className='kontakt'>
 			<h1 className='center'>KONTAKT</h1>
@@ -15,8 +25,14 @@ function Contact() {
 
 			<div className='pank'>
 				<h3>Pangakonto:</h3>
-				<h3>Rammuklubi MTÜ</h3>
-				<h3>EE2722200221077993385</h3>
+				<div className='with-button'>
+					<h3>{pangakontoNimi}</h3>
+					<Popup size='small' content='Kopeeritud' pinned on='click' trigger={<Button onClick={() => copyToClipboard(pangakontoNimi)} className='copy-button' icon='copy' />}></Popup>
+				</div>
+				<div className='with-button'>
+					<h3>{pangakonto}</h3>
+					<Popup size='small' content='Kopeeritud' pinned on='click' trigger={<Button onClick={() => copyToClipboard(pangakonto)} className='copy-button' icon='copy' />}></Popup>
+				</div>
 			</div>
 
 			<h3>E-post: <a href='mailto:rammuklubi@gmail.com'>rammuklubi@gmail.com</a></h3>

@@ -35,8 +35,22 @@
 	margin-top: 70px;
 
 	h3 {
-		margin: auto;
+		margin-left: 0;
+		height: 28px;
 	}
+}
+
+.ui.button.copy-button {
+	color:black!important;
+	background-color: transparent!important;
+}
+
+.with-button {
+	h3 {
+		margin: 0;
+	}
+	display: flex;
+	justify-content: center;
 }
 
 @media only screen and (max-width: 767px) {

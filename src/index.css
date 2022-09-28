@@ -1,63 +1,62 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 html {
-  height: 100%;
-  overflow: hidden;
+	height: 100%;
+	overflow: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
 
-h1,h2,h3,h4,h5,p,span, .ui.dropdown>.text {
-  font-family: 'Chakra Petch', sans-serif!important;
+h1, h2, h3, h4, h5, p, span, .ui.dropdown>.text {
+	font-family: 'Chakra Petch', sans-serif !important;
 }
 
 .ui.button {
-  background-color: black!important;
-  transition: 0.2s ease;
+	background-color: black !important;
+	transition: 0.2s ease;
 }
 
 .ui.button:hover {
- background-color: white!important;
+	background-color: white !important;
 }
+
 .ui.button[type="submit"],
-.ui.button[type="text"]
- {
-  color:white!important;
-  font-family: 'Chakra Petch', sans-serif!important;
-  font-size: 18px;
-  border-radius: 0;
-  border: 5px solid black;
+.ui.button[type="text"] {
+	color: white !important;
+	font-family: 'Chakra Petch', sans-serif !important;
+	font-size: 18px;
+	border-radius: 0;
+	border: 5px solid black;
 }
 
 .ui.button[type="submit"]:hover,
-.ui.button[type="text"]:hover
-{
-  color:black!important;
+.ui.button[type="text"]:hover {
+	color: black !important;
 }
 
 
 .display-flex {
-  display: flex;
+	display: flex;
 }
 
 /* Semantic UI overwrites */
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
-  margin-top: auto!important;
+	margin-top: auto !important;
 }
 
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child {
-  margin-bottom: auto!important;
+	margin-bottom: auto !important;
 }
