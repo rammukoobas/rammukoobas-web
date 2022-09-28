@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.3df84ecf.chunk.css",
-    "main.js": "/static/js/main.04a5ac54.chunk.js",
-    "main.js.map": "/static/js/main.04a5ac54.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.16495640.js",
-    "runtime-main.js.map": "/static/js/runtime-main.16495640.js.map",
+    "main.css": "/static/css/main.9774af50.chunk.css",
+    "main.js": "/static/js/main.4fd99149.chunk.js",
+    "main.js.map": "/static/js/main.4fd99149.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a8adfd47.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a8adfd47.js.map",
     "static/css/2.7dce832d.chunk.css": "/static/css/2.7dce832d.chunk.css",
-    "static/js/2.ee1028fe.chunk.js": "/static/js/2.ee1028fe.chunk.js",
-    "static/js/2.ee1028fe.chunk.js.map": "/static/js/2.ee1028fe.chunk.js.map",
-    "static/js/3.e5cbcb66.chunk.js": "/static/js/3.e5cbcb66.chunk.js",
-    "static/js/3.e5cbcb66.chunk.js.map": "/static/js/3.e5cbcb66.chunk.js.map",
+    "static/js/2.18716537.chunk.js": "/static/js/2.18716537.chunk.js",
+    "static/js/2.18716537.chunk.js.map": "/static/js/2.18716537.chunk.js.map",
+    "static/js/3.6177f138.chunk.js": "/static/js/3.6177f138.chunk.js",
+    "static/js/3.6177f138.chunk.js.map": "/static/js/3.6177f138.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7dce832d.chunk.css.map": "/static/css/2.7dce832d.chunk.css.map",
-    "static/css/main.3df84ecf.chunk.css.map": "/static/css/main.3df84ecf.chunk.css.map",
-    "static/js/2.ee1028fe.chunk.js.LICENSE.txt": "/static/js/2.ee1028fe.chunk.js.LICENSE.txt",
+    "static/css/main.9774af50.chunk.css.map": "/static/css/main.9774af50.chunk.css.map",
+    "static/js/2.18716537.chunk.js.LICENSE.txt": "/static/js/2.18716537.chunk.js.LICENSE.txt",
     "static/media/2022Palgimeister.e1dfd22b.jpg": "/static/media/2022Palgimeister.e1dfd22b.jpg",
     "static/media/2022Viljandi.6f769acf.jpg": "/static/media/2022Viljandi.6f769acf.jpg",
     "static/media/Palgi-meistrivõistluse-tulemused-2022.66540d42.pdf": "/static/media/Palgi-meistrivõistluse-tulemused-2022.66540d42.pdf",
@@ -44,10 +44,10 @@
     "static/media/viljandi_hansapäevad.8bc31ec8.png": "/static/media/viljandi_hansapäevad.8bc31ec8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.16495640.js",
+    "static/js/runtime-main.a8adfd47.js",
     "static/css/2.7dce832d.chunk.css",
-    "static/js/2.ee1028fe.chunk.js",
-    "static/css/main.3df84ecf.chunk.css",
-    "static/js/main.04a5ac54.chunk.js"
+    "static/js/2.18716537.chunk.js",
+    "static/css/main.9774af50.chunk.css",
+    "static/js/main.4fd99149.chunk.js"
   ]
 }
