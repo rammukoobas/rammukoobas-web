@@ -214,6 +214,12 @@ function EestiMeisterPalk27082022(props) {
                 </a>
             </div>
 
+            <div className='photos center'>
+                <a href="https://photos.app.goo.gl/3AHVUrJvHNM4Y7i5A" target="_blank" rel="noopener noreferrer" >
+                    <h2><Icon name="photo" />FOTOD VÕISTLUSEST <Icon name="photo" /></h2>
+                </a>
+            </div>
+
             <div className='content'>
                 <CompetitionNavbar infoDisplayed={infoDisplayed} setInfoDisplayed={setInfoDisplayed.bind(this)} allowRegister={false} />
                 {infoDisplayed === "info" &&
