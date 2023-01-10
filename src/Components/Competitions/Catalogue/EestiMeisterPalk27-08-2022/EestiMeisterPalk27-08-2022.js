@@ -173,7 +173,7 @@ function Register({ formError, setFormError }) {
 function Live() {
 	return (
 		<div className='live'>
-			<iframe width="1081" height="608" src="https://www.youtube.com/embed/yWaYLYhjSV8" title="Eesti Meistrivõistlused Palgi Surumises 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<iframe width="1081" height="608" src="https://www.youtube.com/embed/yWaYLYhjSV8" title="Eesti Meistrivõistlused Palgi Surumises 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" allowfullscreen></iframe>
 		</div>
 	)
 }
