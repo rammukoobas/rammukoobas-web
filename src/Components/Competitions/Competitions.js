@@ -5,6 +5,7 @@ import './Competitions.scss'
 
 import Viljandi2022 from './Catalogue/CompetitionImages/2022Viljandi.jpg'
 import Palgimeister2022 from './Catalogue/CompetitionImages/2022Palgimeister.jpg'
+import Tartu2023 from './Catalogue/CompetitionImages/2023Tartu.jpg'
 
 function Competitions() {
 
@@ -19,7 +20,15 @@ function Competitions() {
 				<h1>TULEVASED VÕISTLUSED:</h1>
 			</div>
 			<List className="nimekiri">
-				<h1 className='center'>- - -</h1>
+				{/* <h1 className='center'>- - -</h1> */}
+				<List.Item onClick={() => routeChange("/voistlused/tartu-22-07-2023")}>
+					<div className='competition-item'>
+						<div className='competition-heading'>
+							<h2>22.07.2023</h2><h3>Tartu rammumees ja rammunaine 2023</h3>
+						</div>
+						<img className='competition-img' src={Tartu2023} />
+					</div>
+				</List.Item>
 			</List>
 			<div className='past-banner'>
 				<h2>TOIMUNUD VÕISTLUSED:</h2>

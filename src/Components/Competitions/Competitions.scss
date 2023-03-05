@@ -185,7 +185,7 @@
 }
 
 .popup .content {
-	margin: auto!important;
+	margin: auto !important;
 }
 
 .info-div {
@@ -267,6 +267,15 @@
 	}
 }
 
+.color-maroon {
+	color: maroon
+}
+
+.framed {
+	margin: 40px 0;
+	padding: 15px;
+	border: 7px solid black;
+}
 
 @media only screen and (max-width: 767px) {
 	.section-competition {
