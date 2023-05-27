@@ -24,7 +24,7 @@ export const PopupAlert = () => {
 					<Icon className='close' name="window close" onClick={() => setShowPopup(false)}></Icon>
 				</div>
 				<div className='popup-content'>
-					<a href='https://rammukoobas.mikron.ee/parnu_rammumees_2023' target='_blank'>
+					<a href='https://rammukoobas.mikron.ee/parnu_rammumees_2023' target='_blank' rel="noreferrer">
 						<h4>Pärnu Rammumees 2023 tulemused reaalajas</h4>
 					</a>
 
