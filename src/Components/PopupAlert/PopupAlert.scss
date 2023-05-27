@@ -1,0 +1,66 @@
+.popup-alert {
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+	width: 400px;
+	border: 5px solid black;
+	background-color: white;
+
+	padding: 10px;
+
+	transition: 300ms ease;
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: top;
+		width: 100%;
+
+		h2 {
+			i {
+				color: maroon;
+				animation-name: blinking;
+				animation-duration: 1.5s;
+				animation-iteration-count: infinite;
+			}
+
+			display: inline-block;
+			margin: 0;
+		}
+
+		.close {
+			transform: scale(1.6);
+			cursor: pointer;
+		}
+	}
+
+	.popup-content {
+		margin: 10px 0;
+	}
+}
+
+.popup-alert.hidden {
+	bottom: -200px;
+}
+
+@keyframes blinking {
+	0% {
+		color: maroon;
+	}
+
+	50% {
+		color: transparent;
+	}
+
+	100% {
+		color: maroon;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.popup-alert {
+		width: 100dvw;
+		right: 0;
+		bottom: 0;
+	}
+}

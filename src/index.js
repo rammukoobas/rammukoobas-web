@@ -13,6 +13,7 @@ import Competition from './Components/Competition/Competition';
 import Competitions from './Components/Competitions/Competitions';
 import Members from './Components/Members/Members';
 import Footer from './Components/Footer/Footer';
+import { PopupAlert } from './Components/PopupAlert/PopupAlert';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,6 +32,7 @@ root.render(
         <Route path="/voistlused" element={<Competitions />} />
         <Route path="*" element={<Homepage />} />
       </Routes>
+	  <PopupAlert />
       <Footer />
     </HashRouter>
 
