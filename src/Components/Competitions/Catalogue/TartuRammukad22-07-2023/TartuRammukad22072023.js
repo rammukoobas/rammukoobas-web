@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Form, List, Button, Checkbox } from 'semantic-ui-react'
+import { Form, List, Button, Checkbox, Icon } from 'semantic-ui-react'
 import emailjs from "emailjs-com"
 
 import '../../../Competitions/Competitions.scss'
@@ -21,8 +21,8 @@ function Info() {
 				<List.Item>18 tolli jõutõmme (eraldi Eesti meistrivõistluste arvestus)</List.Item>
 				<List.Item>Viking press</List.Item>
 				<List.Item>Meremees ja raam 15+15m</List.Item>
-				<List.Item>Kompleksala</List.Item>
-				<List.Item>Kivide/kottide tõstmine</List.Item>
+				<List.Item>Dinnie Stones jooks 15m</List.Item>
+				<List.Item>Kottide tõstmine</List.Item>
 			</List>
 			<h4>NB! Võistlusalad võivad muutuda vastavalt sponsoritele!</h4>
 			<h2>Eesti meistrivõistlused 18 tolli jõutõmbes alaklassid:</h2>
@@ -99,25 +99,45 @@ function Rules() {
 
 			<h2>Meremehe ja raami vedamine 15+15m</h2>
 			<List>
+				<List.Item><h3>- Meremehe raskused on järgmised:</h3></List.Item>
+				<List.Item><h5>Noored (alla 20a) 200kg</h5></List.Item>
+				<List.Item><h5>Naised vaba klass 150kg</h5></List.Item>
+				<List.Item><h5>Mehed U90 (alla 90kg) 280kg</h5></List.Item>
+				<List.Item><h5>Mehed U105 (alla 105kg) 280kg</h5></List.Item>
+				<List.Item><h5>Mehed masters (üle 40 aastased) 280kg</h5></List.Item>
+				<List.Item><h5>Mehed vaba klass 350kg</h5></List.Item>
 				<List.Item><h3>- Igal võistlejal on aega meremehe ja raami kandmiseks 60 sekundit</h3></List.Item>
-				<List.Item><h3>- Meremehe ja raami raskused selguvad kohapeal</h3></List.Item>
 				<List.Item><h3>- Võidab see, kes käib vahemaa kõige kiiremini. Kui aeg saab otsa, siis võidab see, kes käib raskusega kõige kaugemale</h3></List.Item>
 				<List.Item><h3>- Alale on lubatud üks võistleja abiline</h3></List.Item>
 			</List>
 
-			<h2>Kompleks ala 15m</h2>
+			<h2>Dinnie Stones jooks 15m</h2>
 			<List>
-				<List.Item><h3>Igal võistlejal on kompleks ala läbimiseks aega 60 sekundit</h3></List.Item>
-				<List.Item><h3>- Kompleks ala raskused selguvad enne võistlust</h3></List.Item>
+				<List.Item><h3>- Igal võistlejal on „Dinnie stone“ 15m raja läbimiseks aega 60 sekundit</h3></List.Item>
+				<List.Item><h3>- Dinnie Stone ala raskused:</h3></List.Item>
+				<List.Item><h5>Noored (alla 20a) 90kg ja 70kg </h5></List.Item>
+				<List.Item><h5>Naised vaba klass 70kg ja 50kg</h5></List.Item>
+				<List.Item><h5>Mehed U90 (alla 90kg) 110kg ja 90kg</h5></List.Item>
+				<List.Item><h5>Mehed U105 (alla 105kg) 110kg ja 90kg</h5></List.Item>
+				<List.Item><h5>Mehed masters (üle 40 aastased) 110kg ja 90kg</h5></List.Item>
+				<List.Item><h5>Mehed vaba klass 130kg ja 110kg</h5></List.Item>
 				<List.Item><h3>- Võidab see, kes käib vahemaa kõige kiiremini. Kui aeg saab otsa, siis võidab see, kes käib raskusega kõige kaugemale</h3></List.Item>
 				<List.Item><h3>- Alale on lubatud üks võistleja abiline</h3></List.Item>
 			</List>
 
-			<h2>Kivide/Kottide tõstmine</h2>
+			<h2>Kottide tõstmine</h2>
 			<List>
-				<List.Item><h3>- Kivide/kottide raskused selguvad võistlusel</h3></List.Item>
-				<List.Item><h3>- Võidab see, kes tõstab kive/kotte üle kõrguse kõige rohkem kordi</h3></List.Item>
-				<List.Item><h3>- Alale on lubatud üks võistleja abiline</h3></List.Item>
+				<List.Item><h3>- Kottide raskused:</h3></List.Item>
+				<List.Item><h5>Noored (alla 20a) 80kg, 100kg ja 120 kg</h5></List.Item>
+				<List.Item><h5>Naised vaba klass 80kg, 100kg ja 120 kg</h5></List.Item>
+				<List.Item><h5>Mehed U90 (alla 90kg) 100kg, 120kg ja 140 kg</h5></List.Item>
+				<List.Item><h5>Mehed U105 (alla 105kg) 100kg, 120kg ja 140 kg</h5></List.Item>
+				<List.Item><h5>Mehed masters (üle 40 aastased) 100kg, 120kg ja 140 kg</h5></List.Item>
+				<List.Item><h5>Mehed vaba klass 120kg ja 140 kg</h5></List.Item>
+				<List.Item><h3>- Võidab see, kes tõstab kotte üle 1,2m kõrguse kõige rohkem kordi 60 sekundi jooksul</h3></List.Item>
+				<List.Item><h3>- Üks tõste suurema raskusega võidab kõik väiksema raskusega tehtud tõsted!</h3></List.Item>
+				<List.Item><h3>- Suurema raskusega tõstmise ebaõnnestumisel võib alati võtta kergema koti!</h3></List.Item>
+				<List.Item><h3>- Alale on lubatud üks võistleja abiline!</h3></List.Item>
 			</List>
 		</div>
 	)
@@ -257,7 +277,14 @@ function Register({ formError, setFormError }) {
 }
 
 function Live() {
-	return (<></>)
+	return (
+		<>
+			<div className='info-div'>
+				<h2>Otseülekanne toimub sport.television.ee keskkonnas:</h2>
+				<a href='https://sport.television.ee/live/1819'><h2>https://sport.television.ee/live/1819</h2></a>
+			</div>
+		</>
+	)
 }
 
 function Media() {
@@ -282,8 +309,13 @@ function TartuRammukad22072023(props) {
 				<h3>Facebook event: </h3><img src={FacebookLogo} alt='facebook-logo' />
 			</div>
 
+			<div onClick={() => setInfoDisplayed("live")} className='photos center hover-cursor'>
+				<h2><Icon style={{ "color": "maroon" }} name="circle" />VÕISTLUSE ÜLEKANNE</h2>
+
+			</div>
+
 			<div className='content'>
-				<CompetitionNavbar infoDisplayed={infoDisplayed} allowRegister setInfoDisplayed={setInfoDisplayed.bind(this)} />
+				<CompetitionNavbar infoDisplayed={infoDisplayed} allowRegister={false} setInfoDisplayed={setInfoDisplayed.bind(this)} />
 				{infoDisplayed === "info" &&
 					<Info />
 				}

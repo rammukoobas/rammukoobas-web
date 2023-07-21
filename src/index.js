@@ -33,6 +33,7 @@ root.render(
 				<Route path="*" element={<Homepage />} />
 			</Routes>
 			{/* Popup alert goes here if necessary */}
+
 			<Footer />
 		</HashRouter>
 
