@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff801c95.chunk.css",
-    "main.js": "/static/js/main.d0f112d6.chunk.js",
-    "main.js.map": "/static/js/main.d0f112d6.chunk.js.map",
+    "main.css": "/static/css/main.5945c960.chunk.css",
+    "main.js": "/static/js/main.8d796afa.chunk.js",
+    "main.js.map": "/static/js/main.8d796afa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c7b3ad1e.js",
     "runtime-main.js.map": "/static/js/runtime-main.c7b3ad1e.js.map",
     "static/css/2.7dce832d.chunk.css": "/static/css/2.7dce832d.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.89d84933.chunk.js.map": "/static/js/3.89d84933.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7dce832d.chunk.css.map": "/static/css/2.7dce832d.chunk.css.map",
-    "static/css/main.ff801c95.chunk.css.map": "/static/css/main.ff801c95.chunk.css.map",
+    "static/css/main.5945c960.chunk.css.map": "/static/css/main.5945c960.chunk.css.map",
     "static/js/2.b630590d.chunk.js.LICENSE.txt": "/static/js/2.b630590d.chunk.js.LICENSE.txt",
     "static/media/2022Palgimeister.e1dfd22b.jpg": "/static/media/2022Palgimeister.e1dfd22b.jpg",
     "static/media/2022Viljandi.6f769acf.jpg": "/static/media/2022Viljandi.6f769acf.jpg",
@@ -48,7 +48,7 @@
     "static/js/runtime-main.c7b3ad1e.js",
     "static/css/2.7dce832d.chunk.css",
     "static/js/2.b630590d.chunk.js",
-    "static/css/main.ff801c95.chunk.css",
-    "static/js/main.d0f112d6.chunk.js"
+    "static/css/main.5945c960.chunk.css",
+    "static/js/main.8d796afa.chunk.js"
   ]
 }
