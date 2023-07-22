@@ -24,9 +24,15 @@ export const PopupAlert = () => {
 					<Icon className='close' name="window close" onClick={() => setShowPopup(false)}></Icon>
 				</div>
 				<div className='popup-content'>
-					<a href='https://rammukoobas.mikron.ee/parnu_rammumees_2023' target='_blank' rel="noreferrer">
-						<h4>Pärnu Rammumees 2023 tulemused reaalajas</h4>
+					<a href='https://tulemused.ee/competition/2' target='_blank' rel="noreferrer">
+						<h4>Tartu Rammumees ja Rammunaine 2023 tulemused reaalajas</h4>
 					</a>
+
+					<div className='padding-top'>
+						<a href='https://sport.television.ee/live/1819' target='_blank' rel="noreferrer">
+							<h4>Võistluse otseülekanne</h4>
+						</a>
+					</div>
 
 				</div>
 			</div>
