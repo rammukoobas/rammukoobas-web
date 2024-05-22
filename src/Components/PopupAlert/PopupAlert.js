@@ -18,19 +18,19 @@ export const PopupAlert = () => {
 			<div className={`popup-alert ${!showPopup ? "hidden" : ""}`}>
 				<div className="header">
 					<div>
-						<h2><Icon name="circle" />LIVE</h2>
+						<h2><Icon name="circle" />REGISTREERI</h2>
 					</div>
 
 					<Icon className='close' name="window close" onClick={() => setShowPopup(false)}></Icon>
 				</div>
 				<div className='popup-content'>
-					<a href='https://tulemused.ee/competition/2' target='_blank' rel="noreferrer">
-						<h4>Tartu Rammumees ja Rammunaine 2023 tulemused reaalajas</h4>
-					</a>
+
+					<h4>Pane end Tartu Rammumees ja Rammunaine 2024 võistlusele kirja!</h4>
+
 
 					<div className='padding-top'>
-						<a href='https://sport.television.ee/live/1819' target='_blank' rel="noreferrer">
-							<h4>Võistluse otseülekanne</h4>
+						<a href='/#/voistlused/tartu-13-07-2024/register' onClick={() => setShowPopup(false)}>
+							<h3>REGISTREERI SIIN</h3>
 						</a>
 					</div>
 

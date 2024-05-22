@@ -30,7 +30,7 @@ function MobileSidebar({ sidebar, setSidebar }) {
 				<h2 onClick={() => { routeChange("/kontakt"); setSidebar(false) }}>KONTAKT</h2>
 			</Menu.Item>
 			<Menu.Item>
-				<h2 onClick={() => { routeChange("/liikmed"); setSidebar(false) }}>LIIKMED</h2>
+				<h2 onClick={() => { routeChange("/galerii"); setSidebar(false) }}>GALERII</h2>
 			</Menu.Item>
 			<Menu.Item>
 				<span onClick={() => { routeChange("/voistlused"); setSidebar(false) }}>VÕISTLUSED</span>

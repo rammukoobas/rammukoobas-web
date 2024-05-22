@@ -11,7 +11,7 @@ import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Competition from './Components/Competition/Competition';
 import Competitions from './Components/Competitions/Competitions';
-import Members from './Components/Members/Members';
+import Gallery from './Components/Gallery/Gallery';
 import Footer from './Components/Footer/Footer';
 import { PopupAlert } from './Components/PopupAlert/PopupAlert';
 
@@ -24,7 +24,7 @@ root.render(
 				<Route path="/" element={<Homepage />} />
 				<Route path="/klubist" element={<About />} />
 				<Route path="/kontakt" element={<Contact />} />
-				<Route path="/liikmed" element={<Members />} />
+				<Route path="/galerii" element={<Gallery />} />
 				<Route path="/voistlused/:voistlus" element={<Competition />} />
 				<Route path="/voistlused/:voistlus/live" element={<Competition infoDisplayed="live" />} />
 				<Route path="/voistlused/:voistlus/video" element={<Competition infoDisplayed="live" />} />
@@ -34,7 +34,7 @@ root.render(
 				<Route path="*" element={<Homepage />} />
 			</Routes>
 			{/* Popup alert goes here if necessary */}
-			{/* <PopupAlert /> */}
+			<PopupAlert />
 			<Footer />
 		</HashRouter>
 

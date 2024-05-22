@@ -31,7 +31,7 @@ function Navbar() {
 			</div>
 
 			<div className='width-40 display-flex'>
-				<h2 onClick={() => routeChange("/liikmed")}>LIIKMED</h2>
+				<h2 onClick={() => routeChange("/galerii")}>GALERII</h2>
 				<span onClick={() => routeChange("/voistlused")}>VÕISTLUSED</span>
 			</div>
 
