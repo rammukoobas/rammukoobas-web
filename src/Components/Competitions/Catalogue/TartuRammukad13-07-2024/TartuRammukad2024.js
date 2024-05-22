@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Form, List, Button, Checkbox, Icon } from 'semantic-ui-react'
+import { Form, List, Button, Checkbox, Icon, Table } from 'semantic-ui-react'
 import emailjs from "emailjs-com"
 
 import '../../../Competitions/Competitions.scss'
@@ -14,51 +14,27 @@ import OverlayMessage from '../../../OverlayMessage/OverlayMessage'
 function Info() {
 	return (
 		<div className='info-div text-center'>
-			<h3>Selgitame välja Tartu Rammumehe ja Rammunaise 2023</h3>
-			<h3>Võistlus toimub Tartu südalinnas 22. juulil 2023 (22.07.2023) </h3>
+			<h3>Selgitame välja Tartu Rammumehe ja Rammunaise 2024</h3>
+			<h3>Võistlus toimub Tartu Lõunakeskuse jäähallis 13. juulil 2024 (13.07.2024) </h3>
+
 			<h2>PLAANITAVAD VÕISTLUSALAD:</h2>
 			<List ordered>
-				<List.Item>18 tolli jõutõmme (eraldi Eesti meistrivõistluste arvestus)</List.Item>
-				<List.Item>Viking press</List.Item>
-				<List.Item>Meremees ja raam 15+15m</List.Item>
-				<List.Item>Dinnie Stones jooks 15m</List.Item>
-				<List.Item>Kottide tõstmine</List.Item>
+				<List.Item>Liivakottide viskamine üle 4,5m</List.Item>
+				<List.Item>Liivakottide tõstmine õlale</List.Item>
+				<List.Item>Karussell</List.Item>
+				<List.Item>Õla kompleks ala</List.Item>
+				<List.Item>Hummer Tyre apollon jõutõmme</List.Item>
 			</List>
-			<h4>NB! Võistlusalad võivad muutuda vastavalt sponsoritele!</h4>
-			<h2>Eesti meistrivõistlused 18 tolli jõutõmbes alaklassid:</h2>
-			<List>
-				<List.Item>Noored (alla 20 aastased)</List.Item>
-				<List.Item>Naised (Vaba klass)</List.Item>
-				<List.Item>Mehed U90 (alla 90kg)</List.Item>
-				<List.Item>Mehed U105 (alla 105kg)</List.Item>
-				<List.Item>Mehed masters (üle 40 aastased) </List.Item>
-				<List.Item>Mehed (Vaba klass)</List.Item>
-			</List>
-			<h2>Tartu Rammumees ja Rammunaine alaklassid:</h2>
-			<List>
-				<List.Item>Noored (alla 20 aastased) - <strong>Eesti meistrivõistlused</strong></List.Item>
-				<List.Item>Naised (Vaba klass)</List.Item>
-				<List.Item>Mehed U90 (alla 90kg) - <strong>Eesti meistrivõistlused</strong></List.Item>
-				<List.Item>Mehed U105 (alla 105kg) - <strong>Eesti meistrivõistlused</strong></List.Item>
-				<List.Item>Mehed masters (üle 40 aastased) - <strong>Eesti meistrivõistlused</strong></List.Item>
-				<List.Item>Mehed (Vaba klaass) - <strong>Eesti PRO liiga etapp </strong></List.Item>
-			</List>
-
-			<div class="framed">
-				<h2>Maailmarekordikatse 18 tolli jõutõmbes !!!</h2>
-				<h3>Rauno Heinla ning Aivars Smaukstelis tulevad ja üritavad tõmmata maailmarekordit 18 tolli jõutõmbes. </h3>
-			</div>
 
 			<h2>Ajakava:</h2>
 			<List>
-				<List.Item>09.00-09.55 Kogunevad naised ja noored </List.Item>
-				<List.Item>10.00-12.00 Naiste ja noorte võistlus </List.Item>
-				<List.Item>12.00-12.55 Kogunevad U90, U105 ja Masters klassid </List.Item>
-				<List.Item>13.00-16.00 Võistlevad U90, U105 ja Masters klassid. </List.Item>
-				<List.Item>16.00-17.00 Maailmarekordi katsed 18 tolli jõutõmbes. </List.Item>
-				<List.Item>17.00-20.00 Võistlevad meeste vaba klassi sportlased. </List.Item>
-				<List.Item>21.00 Autasustamine</List.Item>
+				<List.Item>11.00-12.00 Kõigi võistlejate kogunemine</List.Item>
+				<List.Item>12.00-12.20 Võistlejate tutvustamine</List.Item>
+				<List.Item>12.20-15.00 Noorte ja U105 võistlus</List.Item>
+				<List.Item>15.00-18.00 Meeste ja naiste avatud klassi võistlus</List.Item>
+				<List.Item>18.00-19.00 Autasustamine</List.Item>
 			</List>
+
 			<h4>NB! Ajakava võib muutuda!</h4>
 		</div>
 	)
@@ -74,21 +50,77 @@ function Rules() {
 				<List.Item><h3>- Võistleja riietus - lubatud on võistlustrikoo, lühikesed püksid. Võistlustel peab kandma korraldaja poolt ette antud särki kui ei ole juhendatud teisiti.</h3></List.Item>
 				<List.Item><h3>- Enne igat võistlusala tutvustab kohtunik ala eripära ja võistlusreegleid kõigile grupi võistlejatele.</h3></List.Item>
 				<List.Item><h3>- Eelmine ala määrab võistlusjärjekorra järgmisele alale. Ala võitja teeb järgmist ala viimasena!</h3></List.Item>
+				<List.Item><h3>- Esimese ala järjekorra loosimine toimub võistlejate tutvustusel!</h3></List.Item>
 			</List>
 
 			<h2>VÕISTLUSALADE REEGILD:</h2>
-			<h2>18 tolli Jõutõmme EMV</h2>
-			<List>
-				<List.Item><h3>- Igal võistlejal on kolm katset</h3></List.Item>
-				<List.Item><h3>- Võistleja peab algraskuse teatama sekretärile 10 minutit enne ala algust</h3></List.Item>
-				<List.Item><h3>- Iga järgnev raskus on vaja sekretärile öelda järgmise võistleja katse jooksul</h3></List.Item>
-				<List.Item><h3>- Jõutõmbetrikoo on lubatud</h3></List.Item>
-				<List.Item><h3>- Tõmbel peavad käed hoidma kangist kinni põlvedest väljastpoolt.</h3></List.Item>
-				<List.Item><h3>- Tõmbe Alal on lubatud üks võistleja abiline</h3></List.Item>
-				<List.Item><h3>- Võidab see, kes tõstab 18 tolli kõrguselt kõige suurema raskuse kooskõlas kohtunikega.</h3></List.Item>
-			</List>
+			<div className='py-7'>
+				<h2>Liivakottide viskamine üle 4,5m</h2>
 
-			<h2>Viking press</h2>
+				<Table basic='very'>
+					<Table.Header>
+						<Table.Row>
+							<Table.HeaderCell>Võistlusklass</Table.HeaderCell>
+							<Table.HeaderCell>Kottide kaalud</Table.HeaderCell>
+						</Table.Row>
+					</Table.Header>
+
+					<Table.Body>
+						<Table.Row>
+							<Table.Cell>Noored (23a ja alla)</Table.Cell>
+							<Table.Cell>30lbs, 35lbs, 40lbs, 45lbs, 50lbs</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
+							<Table.Cell>30lbs, 35lbs, 40lbs, 45lbs, 50lbs</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Naised vaba klass</Table.Cell>
+							<Table.Cell>15lbs, 20lbs, 25lbs, 30lbs, 35lbs</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed vaba klass</Table.Cell>
+							<Table.Cell>40lbs, 45lbs, 50lbs, 55lbs, 60lbs</Table.Cell>
+						</Table.Row>
+					</Table.Body>
+				</Table>
+
+				<List>
+					<List.Item>- Võidab see, kes tõstab kõige kiiremini kõik kotid õlale, ajalimiit 60 sekundit.</List.Item>
+					<List.Item>- Aeg läheb kinni siis kui kohtunik annab alla märguande!</List.Item>
+					<List.Item>- Kotte peab tõstma õlale järjest!</List.Item>
+				</List>
+			</div>
+			<h2>Liivakottide tõstmine õlale</h2>
+
+			<Table basic="very">
+				<Table.Header>
+					<Table.Row>
+						<Table.HeaderCell>Class</Table.HeaderCell>
+						<Table.HeaderCell>Weights</Table.HeaderCell>
+					</Table.Row>
+				</Table.Header>
+
+				<Table.Body>
+					<Table.Row>
+						<Table.Cell>Noored (23a ja alla)</Table.Cell>
+						<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
+					</Table.Row>
+					<Table.Row>
+						<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
+						<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
+					</Table.Row>
+					<Table.Row>
+						<Table.Cell>Naised vaba klass</Table.Cell>
+						<Table.Cell>30kg, 40kg, 50kg, 60kg, 80kg</Table.Cell>
+					</Table.Row>
+					<Table.Row>
+						<Table.Cell>Mehed vaba klass</Table.Cell>
+						<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
+					</Table.Row>
+				</Table.Body>
+			</Table>
+
 			<List>
 				<List.Item><h3>- Igal võistlejal on aega 60 sekundit, et teha maksimaalne arv korduseid</h3></List.Item>
 				<List.Item><h3>- Raskust tohib vahepeal õlgadelt maha panna üks kord</h3></List.Item>
@@ -280,8 +312,9 @@ function Live() {
 	return (
 		<>
 			<div className='info-div'>
-				<h2>Otseülekanne toimub sport.television.ee keskkonnas:</h2>
-				<a href='https://sport.television.ee/live/1819'><h2>https://sport.television.ee/live/1819</h2></a>
+				{/* <h2>Otseülekanne toimub sport.television.ee keskkonnas:</h2>
+				<a href='https://sport.television.ee/live/1819'><h2>https://sport.television.ee/live/1819</h2></a> */}
+				<h2>Hetkel info puudub</h2>
 			</div>
 		</>
 	)
