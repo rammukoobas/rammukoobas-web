@@ -25,7 +25,7 @@ function Competitions() {
 				<List.Item onClick={() => routeChange("/voistlused/tartu-13-07-2024")}>
 					<div className='competition-item'>
 						<div className='competition-heading'>
-							<h2>13.07.2024</h2><h3>Tartu rammumees ja rammunaine 2024</h3>
+							<h2>Tartu rammumees ja rammunaine 2024</h2><h3 className='mt-0'>13.07.2024</h3>
 						</div>
 						<img className='competition-img' src={Tartu2024} />
 					</div>
@@ -38,7 +38,7 @@ function Competitions() {
 				<List.Item onClick={() => routeChange("/voistlused/tartu-22-07-2023")}>
 					<div className='competition-item'>
 						<div className='competition-heading'>
-							<h2>22.07.2023</h2><h3>Tartu rammumees ja rammunaine 2023</h3>
+							<h2>Tartu rammumees ja rammunaine 2023</h2><h3 className='mt-0'>22.07.2023</h3>
 						</div>
 						<img className='competition-img' src={Tartu2023} />
 					</div>
@@ -47,7 +47,7 @@ function Competitions() {
 				<List.Item onClick={() => routeChange("/voistlused/toilasadam-27-08-2022")}>
 					<div className='competition-item'>
 						<div className='competition-heading'>
-							<h2>27.08.2022</h2><h3>Eesti meistrivõistlused palgi surumises 2022</h3>
+							<h2>Eesti meistrivõistlused palgi surumises 2022</h2><h3 className='mt-0'>27.08.2022</h3>
 						</div>
 						<img className='competition-img' src={Palgimeister2022} />
 					</div>
@@ -57,7 +57,7 @@ function Competitions() {
 				<List.Item onClick={() => routeChange("/voistlused/viljandi-04-06-2022")}>
 					<div className='competition-item'>
 						<div className='competition-heading'>
-							<h2>04.06.2022</h2><h3>Viljandi Rammumees ja Rammunaine 2022</h3>
+							<h2>Viljandi Rammumees ja Rammunaine 2022</h2><h3 className='mt-0'>04.06.2022</h3>
 						</div>
 						<img className='competition-img' src={Viljandi2022} />
 					</div>

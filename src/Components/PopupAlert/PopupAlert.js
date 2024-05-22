@@ -18,7 +18,7 @@ export const PopupAlert = () => {
 			<div className={`popup-alert ${!showPopup ? "hidden" : ""}`}>
 				<div className="header">
 					<div>
-						<h2><Icon name="circle" />REGISTREERI</h2>
+						<h2><Icon name="circle" />VÕISTLUS!</h2>
 					</div>
 
 					<Icon className='close' name="window close" onClick={() => setShowPopup(false)}></Icon>

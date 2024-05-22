@@ -69,8 +69,12 @@
 }
 
 .nimekiri {
+	display: grid;
+	justify-content: center;
+
 	.item {
 		cursor: pointer;
+
 	}
 }
 
@@ -127,8 +131,11 @@
 }
 
 .competition-item {
+	padding: 24px 0;
+
 	.competition-heading {
 		width: 100%;
+		max-width: 400px;
 	}
 
 	.competition-img {
