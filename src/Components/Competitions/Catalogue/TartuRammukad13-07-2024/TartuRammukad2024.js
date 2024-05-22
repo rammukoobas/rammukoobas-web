@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Form, List, Button, Checkbox, Icon, Table } from 'semantic-ui-react'
+import { Form, List, Button, Checkbox, Table } from 'semantic-ui-react'
 import emailjs from "emailjs-com"
 
 import '../../../Competitions/Competitions.scss'
@@ -11,7 +11,8 @@ import CompetitionNavbar from '../../CompetitionNavbar'
 
 import OverlayMessage from '../../../OverlayMessage/OverlayMessage'
 
-function Info() {
+function Info({ setInfoDisplayed }) {
+
 	return (
 		<div className='info-div text-center'>
 			<h3>Selgitame välja Tartu Rammumehe ja Rammunaise 2024</h3>
@@ -36,6 +37,8 @@ function Info() {
 			</List>
 
 			<h4>NB! Ajakava võib muutuda!</h4>
+
+			<h2>Tutvu võistluste formaadi ja reeglitega <span className='text-decoration-underline' onClick={() => setInfoDisplayed("rules")}>SIIN</span></h2>
 		</div>
 	)
 }
@@ -54,7 +57,7 @@ function Rules() {
 			</List>
 
 			<h2>VÕISTLUSALADE REEGILD:</h2>
-			<div className='py-7'>
+			<div className='py-5 my-5 mt-0 pt-0'>
 				<h2>Liivakottide viskamine üle 4,5m</h2>
 
 				<Table basic='very'>
@@ -91,86 +94,208 @@ function Rules() {
 					<List.Item>- Kotte peab tõstma õlale järjest!</List.Item>
 				</List>
 			</div>
-			<h2>Liivakottide tõstmine õlale</h2>
 
-			<Table basic="very">
-				<Table.Header>
-					<Table.Row>
-						<Table.HeaderCell>Class</Table.HeaderCell>
-						<Table.HeaderCell>Weights</Table.HeaderCell>
-					</Table.Row>
-				</Table.Header>
+			<div className='py-5 my-5'>
+				<h2>Liivakottide tõstmine õlale</h2>
 
-				<Table.Body>
-					<Table.Row>
-						<Table.Cell>Noored (23a ja alla)</Table.Cell>
-						<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
-					</Table.Row>
-					<Table.Row>
-						<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
-						<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
-					</Table.Row>
-					<Table.Row>
-						<Table.Cell>Naised vaba klass</Table.Cell>
-						<Table.Cell>30kg, 40kg, 50kg, 60kg, 80kg</Table.Cell>
-					</Table.Row>
-					<Table.Row>
-						<Table.Cell>Mehed vaba klass</Table.Cell>
-						<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
-					</Table.Row>
-				</Table.Body>
-			</Table>
+				<Table basic="very">
+					<Table.Header>
+						<Table.Row>
+							<Table.HeaderCell>Võistlusklass</Table.HeaderCell>
+							<Table.HeaderCell>Kaalud</Table.HeaderCell>
+						</Table.Row>
+					</Table.Header>
 
+					<Table.Body>
+						<Table.Row>
+							<Table.Cell>Noored (23a ja alla)</Table.Cell>
+							<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
+							<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Naised vaba klass</Table.Cell>
+							<Table.Cell>30kg, 40kg, 50kg, 60kg, 80kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed vaba klass</Table.Cell>
+							<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
+						</Table.Row>
+					</Table.Body>
+				</Table>
+
+				<List>
+					<List.Item><h3>- Igal võistlejal on aega 60 sekundit, et teha maksimaalne arv korduseid</h3></List.Item>
+					<List.Item><h3>- Raskust tohib vahepeal õlgadelt maha panna üks kord</h3></List.Item>
+					<List.Item><h3>- Raami raskus selgub võistluspaigal</h3></List.Item>
+					<List.Item><h3>- Võidab see, kes teeb 60 sekundi jooksul kõige rohkem korduseid</h3></List.Item>
+					<List.Item><h3>- Alale on lubatud üks võistleja abiline</h3></List.Item>
+				</List>
+
+			</div>
+
+			<div className='py-5 my-5'>
+				<h2>Karussell</h2>
+				<Table basic='very'>
+					<Table.Header>
+						<Table.Row>
+							<Table.HeaderCell>Võistlusklass</Table.HeaderCell>
+							<Table.HeaderCell>Kaalud</Table.HeaderCell>
+						</Table.Row>
+					</Table.Header>
+
+					<Table.Body>
+						<Table.Row>
+							<Table.Cell>Noored (23a ja alla)</Table.Cell>
+							<Table.Cell>200kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
+							<Table.Cell>220kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Naised vaba klass</Table.Cell>
+							<Table.Cell>120kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed vaba klass</Table.Cell>
+							<Table.Cell>250kg</Table.Cell>
+						</Table.Row>
+					</Table.Body>
+				</Table>
+				<List>
+					<List.Item><h3>- Võidab see, kes käib karusselliga kõige kaugemale. Kui aeg saab otsa, siis
+						võidab see, kes on raskusega kõige kaugemale käinud.</h3></List.Item>
+				</List>
+
+			</div>
+
+
+			<div className='py-5 my-5'>
+				<h2>Õla kompleks ala</h2>
+
+				<h3 className='pt-3'>Apollon kangi raskused:</h3>
+				<Table basic='very'>
+					<Table.Header>
+						<Table.Row>
+							<Table.HeaderCell>Võistlusklass</Table.HeaderCell>
+							<Table.HeaderCell>Kaalud</Table.HeaderCell>
+						</Table.Row>
+					</Table.Header>
+
+					<Table.Body>
+						<Table.Row>
+							<Table.Cell>Noored (23a ja alla)</Table.Cell>
+							<Table.Cell>70kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
+							<Table.Cell>100kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Naised vaba klass</Table.Cell>
+							<Table.Cell>40kg kordustele</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed vaba klass</Table.Cell>
+							<Table.Cell>110kg</Table.Cell>
+						</Table.Row>
+					</Table.Body>
+				</Table>
+
+				<h3 className='pt-3'>Metallpalgi raskused:</h3>
+				<Table basic='very'>
+					<Table.Header>
+						<Table.Row>
+							<Table.HeaderCell>Võistlusklass</Table.HeaderCell>
+							<Table.HeaderCell>Kaalud</Table.HeaderCell>
+						</Table.Row>
+					</Table.Header>
+
+					<Table.Body>
+						<Table.Row>
+							<Table.Cell>Noored (23a ja alla)</Table.Cell>
+							<Table.Cell>80kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
+							<Table.Cell>100kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed vaba klass</Table.Cell>
+							<Table.Cell>120kg</Table.Cell>
+						</Table.Row>
+					</Table.Body>
+				</Table>
+
+
+				<h3 className='pt-3'>Puidust palgi raskused:</h3>
+				<Table basic='very'>
+					<Table.Header>
+						<Table.Row>
+							<Table.HeaderCell>Võistlusklass</Table.HeaderCell>
+							<Table.HeaderCell>Kaalud</Table.HeaderCell>
+						</Table.Row>
+					</Table.Header>
+
+					<Table.Body>
+						<Table.Row>
+							<Table.Cell>Noored (23a ja alla)</Table.Cell>
+							<Table.Cell>90kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
+							<Table.Cell>100kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed vaba klass</Table.Cell>
+							<Table.Cell>120kg</Table.Cell>
+						</Table.Row>
+					</Table.Body>
+				</Table>
+
+
+				<h3 className='pt-3'>Metallist ploki raskused:</h3>
+				<Table basic='very'>
+					<Table.Header>
+						<Table.Row>
+							<Table.HeaderCell>Võistlusklass</Table.HeaderCell>
+							<Table.HeaderCell>Kaalud</Table.HeaderCell>
+						</Table.Row>
+					</Table.Header>
+
+					<Table.Body>
+						<Table.Row>
+							<Table.Cell>Noored (23a ja alla)</Table.Cell>
+							<Table.Cell>90kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
+							<Table.Cell>100kg</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Mehed vaba klass</Table.Cell>
+							<Table.Cell>120kg</Table.Cell>
+						</Table.Row>
+					</Table.Body>
+				</Table>
+				<List>
+					<List.Item><h3>- Igal võistlejal on raja läbimiseks aega 60 sekundit.</h3></List.Item>
+					<List.Item><h3>- Võidab see, kes läbib raja kõige kiiremini.</h3></List.Item>
+				</List>
+			</div>
+
+			<h2>Hummer Tyre apollon jõutõmme</h2>
 			<List>
-				<List.Item><h3>- Igal võistlejal on aega 60 sekundit, et teha maksimaalne arv korduseid</h3></List.Item>
-				<List.Item><h3>- Raskust tohib vahepeal õlgadelt maha panna üks kord</h3></List.Item>
-				<List.Item><h3>- Raami raskus selgub võistluspaigal</h3></List.Item>
-				<List.Item><h3>- Võidab see, kes teeb 60 sekundi jooksul kõige rohkem korduseid</h3></List.Item>
-				<List.Item><h3>- Alale on lubatud üks võistleja abiline</h3></List.Item>
+				<List.Item><h3>- Võistluse formaat toimub „last man standing“ formaadis (raskustega üles minek toimub ringi süsteemis ja kohtunike ette antud raskustega)</h3></List.Item>
+				<List.Item><h3>- Võistleja tulemustena jääb võistlusprotokolli kolm viimast edukat tõmmet (võitja järjestus selgub parimate tõmmete järgi)!</h3></List.Item>
+				<List.Item><h3>- Tõmmates sama tulemuse, võidab see võistleja, kes on kergem!</h3></List.Item>
+				<List.Item><h3>- Tõmbel peavad käed hoidma kangist kinni põlvedest väljastpoolt.</h3></List.Item>
 			</List>
 
-			<h2>Meremehe ja raami vedamine 15+15m</h2>
-			<List>
-				<List.Item><h3>- Meremehe raskused on järgmised:</h3></List.Item>
-				<List.Item><h5>Noored (alla 20a) 200kg</h5></List.Item>
-				<List.Item><h5>Naised vaba klass 150kg</h5></List.Item>
-				<List.Item><h5>Mehed U90 (alla 90kg) 280kg</h5></List.Item>
-				<List.Item><h5>Mehed U105 (alla 105kg) 280kg</h5></List.Item>
-				<List.Item><h5>Mehed masters (üle 40 aastased) 280kg</h5></List.Item>
-				<List.Item><h5>Mehed vaba klass 350kg</h5></List.Item>
-				<List.Item><h3>- Igal võistlejal on aega meremehe ja raami kandmiseks 60 sekundit</h3></List.Item>
-				<List.Item><h3>- Võidab see, kes käib vahemaa kõige kiiremini. Kui aeg saab otsa, siis võidab see, kes käib raskusega kõige kaugemale</h3></List.Item>
-				<List.Item><h3>- Alale on lubatud üks võistleja abiline</h3></List.Item>
-			</List>
-
-			<h2>Dinnie Stones jooks 15m</h2>
-			<List>
-				<List.Item><h3>- Igal võistlejal on „Dinnie stone“ 15m raja läbimiseks aega 60 sekundit</h3></List.Item>
-				<List.Item><h3>- Dinnie Stone ala raskused:</h3></List.Item>
-				<List.Item><h5>Noored (alla 20a) 90kg ja 70kg </h5></List.Item>
-				<List.Item><h5>Naised vaba klass 70kg ja 50kg</h5></List.Item>
-				<List.Item><h5>Mehed U90 (alla 90kg) 110kg ja 90kg</h5></List.Item>
-				<List.Item><h5>Mehed U105 (alla 105kg) 110kg ja 90kg</h5></List.Item>
-				<List.Item><h5>Mehed masters (üle 40 aastased) 110kg ja 90kg</h5></List.Item>
-				<List.Item><h5>Mehed vaba klass 130kg ja 110kg</h5></List.Item>
-				<List.Item><h3>- Võidab see, kes käib vahemaa kõige kiiremini. Kui aeg saab otsa, siis võidab see, kes käib raskusega kõige kaugemale</h3></List.Item>
-				<List.Item><h3>- Alale on lubatud üks võistleja abiline</h3></List.Item>
-			</List>
-
-			<h2>Kottide tõstmine</h2>
-			<List>
-				<List.Item><h3>- Kottide raskused:</h3></List.Item>
-				<List.Item><h5>Noored (alla 20a) 80kg, 100kg ja 120 kg</h5></List.Item>
-				<List.Item><h5>Naised vaba klass 80kg, 100kg ja 120 kg</h5></List.Item>
-				<List.Item><h5>Mehed U90 (alla 90kg) 100kg, 120kg ja 140 kg</h5></List.Item>
-				<List.Item><h5>Mehed U105 (alla 105kg) 100kg, 120kg ja 140 kg</h5></List.Item>
-				<List.Item><h5>Mehed masters (üle 40 aastased) 100kg, 120kg ja 140 kg</h5></List.Item>
-				<List.Item><h5>Mehed vaba klass 120kg ja 140 kg</h5></List.Item>
-				<List.Item><h3>- Võidab see, kes tõstab kotte üle 1,2m kõrguse kõige rohkem kordi 60 sekundi jooksul</h3></List.Item>
-				<List.Item><h3>- Üks tõste suurema raskusega võidab kõik väiksema raskusega tehtud tõsted!</h3></List.Item>
-				<List.Item><h3>- Suurema raskusega tõstmise ebaõnnestumisel võib alati võtta kergema koti!</h3></List.Item>
-				<List.Item><h3>- Alale on lubatud üks võistleja abiline!</h3></List.Item>
-			</List>
+			<h4 className='pt-5'>Edukat Võistlemist!</h4>
 		</div>
 	)
 }
@@ -180,10 +305,6 @@ function submitRegistration(e, setFormError, setSent, setErrorSending, setSendin
 	const sisu = Object.fromEntries(new FormData(e.target))
 
 	setSending(true)
-
-	if (!sisu["interested_video"]) {
-		sisu["interested_video"] = "ei"
-	}
 
 	for (let el of Object.keys(sisu)) {
 		if (sisu[el] === "") {
@@ -223,53 +344,38 @@ function Register({ formError, setFormError }) {
 					<input name="nimi" placeholder='Ees- ja perekonnanimi / name' />
 				</Form.Field>
 				<Form.Field>
-					<label>2. Vanus (age)</label>
+					<label>2. Vanus võistluse hetkel (age)</label>
 					<input name="vanus" placeholder='Vanus / age' />
 				</Form.Field>
 				<Form.Field>
-					<label>3. Sugu (gender)</label>
-					<input name="sugu" placeholder='Mees/Naine male/female' />
-				</Form.Field>
-				<Form.Field>
-					<label>4. Pikkus (height)</label>
+					<label>3. Pikkus (height)</label>
 					<input name="pikkus" placeholder='Pikkus (cm) / height (cm)' />
 				</Form.Field>
 				<Form.Field>
-					<label>5. Kaal (weight)</label>
+					<label>4. Kaal (weight)</label>
 					<input name="kaal" placeholder='Kaal (kg) / weight (kg)' />
 				</Form.Field>
 				<Form.Field>
-					<label>6. Võistlusklass (competition class) - Naised, Noored (alla 20a), Mehed U90, Mehed U105, Mehed Masters, Mehed Open</label>
-					<input name="voistlusklass" placeholder='Võistlusklass / competition class' />
-				</Form.Field>
-				<Form.Field>
-					<label>7. Klubi, mida sportlane esindab (represented club)</label>
+					<label>5. Klubi, mida sportlane esindab (represented club)</label>
 					<input name="klubi" placeholder='Klubi / club' />
 				</Form.Field>
 				<Form.Field>
-					<label>8. Riik, mida sportlane esindab (represented country)</label>
-					<input name="riik" placeholder='Riik / country' />
-				</Form.Field>
-				<Form.Field>
-					<label>9. Linn, mida sportlane esindab (represented city) </label>
-					<input name="linn" placeholder='Linn / city' />
-				</Form.Field>
-				<Form.Field>
-					<label>10. Telefoni number (phone)</label>
-					<input name="telefon" placeholder='eg. +37255565565' />
-				</Form.Field>
-				<Form.Field>
-					<label>11. E-posti aadress (email)</label>
-					<input name="email" placeholder='eg. ats.ploom@gmail.com' />
-				</Form.Field>
-				<Form.Field>
-					<label>12. T-Särgi suurus (shirt size)</label>
+					<label>6. T-Särgi suurus (shirt size)</label>
 					<input name="sargi_suurus" placeholder='eg. XS, M, L, XXL etc' />
 				</Form.Field>
 				<Form.Field>
-					<label>Kas oled huvitatud personaalsest videost, hinnad alates 30€ (Pannes linnukese kasti, edastatakse kontaktinfo partnerile, kes lepib detailid kokku). Are you interested in a personal video, prices from 30€ (By checking the box, the contact information will be forwarded to the partner, who will contact you and speak about the details)</label>
-					<Checkbox name="interested_video" label="Huvitatud / Interested" value="jah"></Checkbox>
+					<label>7. Võistleja tutvustamisel lastav laul (theme song)</label>
+					<input name="song" placeholder='https://youtu.be/DhlPAj38rHc' />
 				</Form.Field>
+				<Form.Field>
+					<label>8. Telefoni number (phone)</label>
+					<input name="telefon" placeholder='eg. +37255565565' />
+				</Form.Field>
+				<Form.Field>
+					<label>9. E-posti aadress (email)</label>
+					<input name="email" placeholder='eg. ats.ploom@gmail.com' />
+				</Form.Field>
+
 				{formError &&
 					<h4 style={{ "color": "maroon" }}>*Mingi sisend on jäänud sul täitmata! Palun kontrolli üle ja proovi uuesti registreerida. All inputs are not filled!</h4>
 				}
@@ -283,16 +389,12 @@ function Register({ formError, setFormError }) {
 			<List ordered>
 				<List.Item><h3>Ees ja perekonnanimi</h3></List.Item>
 				<List.Item><h3>Vanus</h3></List.Item>
-				<List.Item><h3>Sugu</h3></List.Item>
 				<List.Item><h3>Pikkus</h3></List.Item>
 				<List.Item><h3>Kaal</h3></List.Item>
-				<List.Item><h3>Võistlusklass</h3></List.Item>
 				<List.Item><h3>Klubi, mida sportlane esindab</h3></List.Item>
-				<List.Item><h3>Riik, mida sportlane esindab</h3></List.Item>
-				<List.Item><h3>Linn, mida sportlane esindab</h3></List.Item>
+				<List.Item><h3>T-särgi suurus</h3></List.Item>
 				<List.Item><h3>Telefoni number</h3></List.Item>
 				<List.Item><h3>E-posti aadress</h3></List.Item>
-				<List.Item><h3>T-särgi suurus</h3></List.Item>
 				<List.Item><h3>Huvitatud videost</h3></List.Item>
 			</List>
 
@@ -337,20 +439,19 @@ function TartuRammukad22072023(props) {
 
 	return (
 		<section className='competition'>
-			<h1>Tartu Rammumees ja Rammunaine 2023</h1>
-			<div className='social-media-event' onClick={() => { window.open("https://www.facebook.com/events/752661766046428") }}>
+			<h1>Tartu Rammumees ja Rammunaine 2024</h1>
+			<div className='social-media-event' onClick={() => { window.open("https://www.facebook.com/events/958053296108924/") }}>
 				<h3>Facebook event: </h3><img src={FacebookLogo} alt='facebook-logo' />
 			</div>
 
-			<div onClick={() => setInfoDisplayed("live")} className='photos center hover-cursor'>
+			{/* <div onClick={() => setInfoDisplayed("live")} className='photos center hover-cursor'>
 				<h2><Icon style={{ "color": "maroon" }} name="circle" />VÕISTLUSE ÜLEKANNE</h2>
-
-			</div>
+			</div> */}
 
 			<div className='content'>
-				<CompetitionNavbar infoDisplayed={infoDisplayed} allowRegister={false} setInfoDisplayed={setInfoDisplayed.bind(this)} />
+				<CompetitionNavbar infoDisplayed={infoDisplayed} allowRegister={true} setInfoDisplayed={setInfoDisplayed.bind(this)} />
 				{infoDisplayed === "info" &&
-					<Info />
+					<Info setInfoDisplayed={setInfoDisplayed} />
 				}
 				{infoDisplayed === "rules" &&
 					<Rules />
