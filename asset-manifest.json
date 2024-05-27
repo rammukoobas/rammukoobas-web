@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b84091db.chunk.css",
+    "main.css": "/static/css/main.496b3872.chunk.css",
     "main.js": "/static/js/main.4436606a.chunk.js",
     "main.js.map": "/static/js/main.4436606a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c7b3ad1e.js",
@@ -12,7 +12,7 @@
     "static/js/3.89d84933.chunk.js.map": "/static/js/3.89d84933.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7dce832d.chunk.css.map": "/static/css/2.7dce832d.chunk.css.map",
-    "static/css/main.b84091db.chunk.css.map": "/static/css/main.b84091db.chunk.css.map",
+    "static/css/main.496b3872.chunk.css.map": "/static/css/main.496b3872.chunk.css.map",
     "static/js/2.79e1d5f5.chunk.js.LICENSE.txt": "/static/js/2.79e1d5f5.chunk.js.LICENSE.txt",
     "static/media/2022Palgimeister.e1dfd22b.jpg": "/static/media/2022Palgimeister.e1dfd22b.jpg",
     "static/media/2022Viljandi.6f769acf.jpg": "/static/media/2022Viljandi.6f769acf.jpg",
@@ -48,7 +48,7 @@
     "static/js/runtime-main.c7b3ad1e.js",
     "static/css/2.7dce832d.chunk.css",
     "static/js/2.79e1d5f5.chunk.js",
-    "static/css/main.b84091db.chunk.css",
+    "static/css/main.496b3872.chunk.css",
     "static/js/main.4436606a.chunk.js"
   ]
 }
