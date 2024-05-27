@@ -43,7 +43,7 @@ function About() {
 					</div>
 					<div className='logo'>
 						<img src={KoverKang} alt="KoverKang logo" />
-						<a href='https://www.instagram.com/koverkang/' target="_blank" rel="noopener noreferrer"><h3>Kõver Kang</h3></a>
+						<a href='https://koverkang.ee' target="_blank" rel="noopener noreferrer"><h3>Kõver Kang</h3></a>
 					</div>
 
 				</div>

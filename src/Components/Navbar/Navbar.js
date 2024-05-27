@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import './Navbar.scss'
 
-import RammukoopaLogo from '../../imgs/Rammukoobas.png'
+import RammukoopaLogo from '../../imgs/Rammukoobas_logo.jpg'
 import MobileSidebar from './MobileSidebar/MobileSidebar';
 
 function Navbar() {
