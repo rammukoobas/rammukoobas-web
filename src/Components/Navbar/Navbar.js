@@ -32,7 +32,7 @@ function Navbar() {
 
 			<div className='width-40 display-flex'>
 				<h2 onClick={() => routeChange("/galerii")}>GALERII</h2>
-				<span onClick={() => routeChange("/voistlused")}>VÕISTLUSED</span>
+				<h2 onClick={() => routeChange("/voistlused")}>VÕISTLUSED</h2>
 			</div>
 
 			<div id={'burger'} onClick={() => setSidebar(!sidebar)}>

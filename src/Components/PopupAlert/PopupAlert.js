@@ -25,11 +25,11 @@ export const PopupAlert = () => {
 				</div>
 				<div className='popup-content'>
 
-					<h4>Pane end Tartu Rammumees ja Rammunaine 2024 võistlusele kirja!</h4>
+					<h4>Pane end Eesti Rammumees ja Rammunaine 2024 võistlusele kirja!</h4>
 
 
 					<div className='padding-top'>
-						<a href='/#/voistlused/tartu-13-07-2024/register' onClick={() => setShowPopup(false)}>
+						<a href='/#/voistlused/eesti-13-07-2024/register' onClick={() => setShowPopup(false)}>
 							<h3>REGISTREERI SIIN</h3>
 						</a>
 					</div>

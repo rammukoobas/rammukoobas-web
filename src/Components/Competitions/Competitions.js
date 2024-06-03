@@ -22,10 +22,10 @@ function Competitions() {
 			</div>
 			<List className="nimekiri">
 				{/* <h1 className='center'>- - -</h1> */}
-				<List.Item onClick={() => routeChange("/voistlused/tartu-13-07-2024")}>
+				<List.Item onClick={() => routeChange("/voistlused/eesti-13-07-2024")}>
 					<div className='competition-item'>
 						<div className='competition-heading'>
-							<h2>Tartu rammumees ja rammunaine 2024</h2><h3 className='mt-0'>13.07.2024</h3>
+							<h2>Eesti rammumees ja rammunaine 2024</h2><h3 className='mt-0'>13.07.2024</h3>
 						</div>
 						<img className='competition-img' src={Tartu2024} />
 					</div>

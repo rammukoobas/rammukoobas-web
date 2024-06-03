@@ -15,7 +15,7 @@ function Info({ setInfoDisplayed }) {
 
 	return (
 		<div className='info-div text-center'>
-			<h3>Selgitame välja Tartu Rammumehe ja Rammunaise 2024</h3>
+			<h3>Selgitame välja Eesti Rammumehe ja Rammunaise 2024</h3>
 			<h3>Võistlus toimub Tartu Lõunakeskuse jäähallis 13. juulil 2024 (13.07.2024) </h3>
 
 			<h2>PLAANITAVAD VÕISTLUSALAD:</h2>
@@ -360,19 +360,23 @@ function Register({ formError, setFormError }) {
 					<input name="klubi" placeholder='Klubi / club' />
 				</Form.Field>
 				<Form.Field>
-					<label>6. T-Särgi suurus (shirt size)</label>
+					<label>6. Võistlusklass (Mehed alla 23 aasta, Mehed alla 105kg, Mehed open, Naised open)</label>
+					<input name="voistlusklass" placeholder='Naised open/Mehed alla 23 aasta/Mehed alla 105kg/Mehed open' />
+				</Form.Field>
+				<Form.Field>
+					<label>7. T-Särgi suurus (shirt size)</label>
 					<input name="sargi_suurus" placeholder='eg. XS, M, L, XXL etc' />
 				</Form.Field>
 				<Form.Field>
-					<label>7. Võistleja tutvustamisel lastav laul (theme song)</label>
+					<label>8. Võistleja tutvustamisel lastav laul (theme song)</label>
 					<input name="song" placeholder='https://youtu.be/DhlPAj38rHc' />
 				</Form.Field>
 				<Form.Field>
-					<label>8. Telefoni number (phone)</label>
+					<label>9. Telefoni number (phone)</label>
 					<input name="telefon" placeholder='eg. +37255565565' />
 				</Form.Field>
 				<Form.Field>
-					<label>9. E-posti aadress (email)</label>
+					<label>10. E-posti aadress (email)</label>
 					<input name="email" placeholder='eg. ats.ploom@gmail.com' />
 				</Form.Field>
 
@@ -439,7 +443,7 @@ function TartuRammukad22072023(props) {
 
 	return (
 		<section className='competition'>
-			<h1>Tartu Rammumees ja Rammunaine 2024</h1>
+			<h1>Eesti Rammumees ja Rammunaine 2024</h1>
 			<div className='social-media-event' onClick={() => { window.open("https://www.facebook.com/events/958053296108924/") }}>
 				<h3>Facebook event: </h3><img src={FacebookLogo} alt='facebook-logo' />
 			</div>

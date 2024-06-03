@@ -9,7 +9,7 @@ const competitonDictionary = {
 	"viljandi-04-06-2022": ViljandiRammukad04062022,
 	"toilasadam-27-08-2022": EestiMeisterPalk27082022,
 	"tartu-22-07-2023": TartuRammukad22072023,
-	"tartu-13-07-2024": TartuRammukad13072024
+	"eesti-13-07-2024": TartuRammukad13072024
 }
 
 function Competition(props) {
