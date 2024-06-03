@@ -39,6 +39,8 @@ function Info({ setInfoDisplayed }) {
 			<h4>NB! Ajakava võib muutuda!</h4>
 
 			<h2>Tutvu võistluste formaadi ja reeglitega <span className='text-decoration-underline' onClick={() => setInfoDisplayed("rules")}>SIIN</span></h2>
+
+			<h2>Registreerimine on avatud 16. juunini</h2>
 		</div>
 	)
 }
@@ -121,7 +123,7 @@ function Rules() {
 						</Table.Row>
 						<Table.Row>
 							<Table.Cell>Mehed vaba klass</Table.Cell>
-							<Table.Cell>60kg, 80kg, 100kg, 120kg, 140kg</Table.Cell>
+							<Table.Cell>80kg, 100kg, 120kg, 140kg, 160kg</Table.Cell>
 						</Table.Row>
 					</Table.Body>
 				</Table>
@@ -188,15 +190,15 @@ function Rules() {
 					<Table.Body>
 						<Table.Row>
 							<Table.Cell>Noored (23a ja alla)</Table.Cell>
-							<Table.Cell>70kg</Table.Cell>
+							<Table.Cell>80kg</Table.Cell>
 						</Table.Row>
 						<Table.Row>
 							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
-							<Table.Cell>100kg</Table.Cell>
+							<Table.Cell>90kg</Table.Cell>
 						</Table.Row>
 						<Table.Row>
 							<Table.Cell>Naised vaba klass</Table.Cell>
-							<Table.Cell>40kg kordustele</Table.Cell>
+							<Table.Cell>40kg-50kg kordustele (ainuke ala)</Table.Cell>
 						</Table.Row>
 						<Table.Row>
 							<Table.Cell>Mehed vaba klass</Table.Cell>
@@ -243,15 +245,15 @@ function Rules() {
 					<Table.Body>
 						<Table.Row>
 							<Table.Cell>Noored (23a ja alla)</Table.Cell>
-							<Table.Cell>90kg</Table.Cell>
+							<Table.Cell>105kg</Table.Cell>
 						</Table.Row>
 						<Table.Row>
 							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
-							<Table.Cell>100kg</Table.Cell>
+							<Table.Cell>110kg</Table.Cell>
 						</Table.Row>
 						<Table.Row>
 							<Table.Cell>Mehed vaba klass</Table.Cell>
-							<Table.Cell>120kg</Table.Cell>
+							<Table.Cell>140kg</Table.Cell>
 						</Table.Row>
 					</Table.Body>
 				</Table>
@@ -269,15 +271,15 @@ function Rules() {
 					<Table.Body>
 						<Table.Row>
 							<Table.Cell>Noored (23a ja alla)</Table.Cell>
-							<Table.Cell>90kg</Table.Cell>
+							<Table.Cell>85kg</Table.Cell>
 						</Table.Row>
 						<Table.Row>
 							<Table.Cell>Mehed U105 (alla 106kg)</Table.Cell>
-							<Table.Cell>100kg</Table.Cell>
+							<Table.Cell>90kg</Table.Cell>
 						</Table.Row>
 						<Table.Row>
 							<Table.Cell>Mehed vaba klass</Table.Cell>
-							<Table.Cell>120kg</Table.Cell>
+							<Table.Cell>100kg</Table.Cell>
 						</Table.Row>
 					</Table.Body>
 				</Table>
@@ -296,6 +298,7 @@ function Rules() {
 			</List>
 
 			<h4 className='pt-5'>Edukat Võistlemist!</h4>
+			<h5>NB! Võistlusalad ja inventari raskused võivad muutuda!</h5>
 		</div>
 	)
 }
