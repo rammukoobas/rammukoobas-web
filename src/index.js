@@ -34,7 +34,7 @@ root.render(
 				<Route path="*" element={<Homepage />} />
 			</Routes>
 			{/* Popup alert goes here if necessary */}
-			<PopupAlert />
+			{/* <PopupAlert /> */}
 			<Footer />
 		</HashRouter>
 

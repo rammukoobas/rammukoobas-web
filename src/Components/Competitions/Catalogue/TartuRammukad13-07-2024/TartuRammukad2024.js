@@ -91,9 +91,10 @@ function Rules() {
 				</Table>
 
 				<List>
-					<List.Item>- Võidab see, kes tõstab kõige kiiremini kõik kotid õlale, ajalimiit 60 sekundit.</List.Item>
-					<List.Item>- Aeg läheb kinni siis kui kohtunik annab alla märguande!</List.Item>
-					<List.Item>- Kotte peab tõstma õlale järjest!</List.Item>
+					<List.Item>- Võidab see, kes viskab kõige kiiremini kõik kotid üle, ajalimiit 60 sekundit.</List.Item>
+					<List.Item>- Aeg läheb kinni siis kui kott läheb üle lati ja puudutab maad!</List.Item>
+					<List.Item>- Peale viset ei tohi kotte õhus puudutada ja püüda, trahv 10 sekundit!</List.Item>
+					<List.Item>- Kotte peab viskama järjest!</List.Item>
 				</List>
 			</div>
 
@@ -456,7 +457,7 @@ function TartuRammukad22072023(props) {
 			</div> */}
 
 			<div className='content'>
-				<CompetitionNavbar infoDisplayed={infoDisplayed} allowRegister={true} setInfoDisplayed={setInfoDisplayed.bind(this)} />
+				<CompetitionNavbar infoDisplayed={infoDisplayed} allowRegister={false} setInfoDisplayed={setInfoDisplayed.bind(this)} />
 				{infoDisplayed === "info" &&
 					<Info setInfoDisplayed={setInfoDisplayed} />
 				}
