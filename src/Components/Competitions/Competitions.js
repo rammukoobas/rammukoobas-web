@@ -21,7 +21,13 @@ function Competitions() {
 				<h1>TULEVASED VÕISTLUSED:</h1>
 			</div>
 			<List className="nimekiri">
-				{/* <h1 className='center'>- - -</h1> */}
+				<h1 className='center'>- - -</h1>
+
+			</List>
+			<div className='past-banner'>
+				<h2>TOIMUNUD VÕISTLUSED:</h2>
+			</div>
+			<List className="nimekiri">
 				<List.Item onClick={() => routeChange("/voistlused/eesti-13-07-2024")}>
 					<div className='competition-item'>
 						<div className='competition-heading'>
@@ -30,11 +36,7 @@ function Competitions() {
 						<img className='competition-img' src={Tartu2024} />
 					</div>
 				</List.Item>
-			</List>
-			<div className='past-banner'>
-				<h2>TOIMUNUD VÕISTLUSED:</h2>
-			</div>
-			<List className="nimekiri">
+
 				<List.Item onClick={() => routeChange("/voistlused/tartu-22-07-2023")}>
 					<div className='competition-item'>
 						<div className='competition-heading'>
